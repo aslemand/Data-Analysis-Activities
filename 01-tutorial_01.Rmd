@@ -1,5 +1,4 @@
 ---
-title: "Tutorial 1: Exploring Categorical Data"
 output: bookdown::gitbook
 ---
 # Tutorial 1 - Exploring Categorical Data
