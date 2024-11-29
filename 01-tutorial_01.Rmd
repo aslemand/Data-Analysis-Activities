@@ -23,8 +23,8 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
 ## Steps to Complete the Activity:
 
 1. **Use Chrome or Firefox browsers** and download the following two files to your computer:
-   - [Data file: Home_SCF2013.csv](https://q.utoronto.ca/courses/367245/files/32675907/download)
-   - [R Script: Home_SCF2013.R](https://q.utoronto.ca/courses/367245/files/32892565/download)
+   - [Data file: Home_SCF2013.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/tutorial_1/Home_SCF2013.csv)
+   - [R Script: Home_SCF2013.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/tutorial_1/Home_SCF2013.R)
 
 2. Copy and paste this link into your web browser: [https://r.datatools.utoronto.ca](https://r.datatools.utoronto.ca) and select **RStudio**.
 
@@ -84,4 +84,5 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
 
 Below are the resources available for this tutorial. Click on the links to download them:
 
-- [R Outputs for Tutorial 1 Activity: Home Ownership and Education Level](https://raw.githubusercontent.com/<username>/<repository>/main/path-to-file/R_Outputs_Tutorial1.pdf)
+- [R Outputs for Tutorial 1 Activity: Home Ownership and Education Level](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/tutorial_1/activity_1.pdf)
+- [Tutorial Slides for Acitivity 1](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/tutorial_1/activity_1_tutorial_slides.pdf)
