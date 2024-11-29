@@ -1,9 +1,0 @@
-welcome-to-data-analysis-activities
-tutorial-1---exploring-categorical-data
-pre-task-tutorial-activity
-education-level
-home-ownership
-steps-to-complete-the-activity
-related-questions
-submission-instructions
-tutorial-activity

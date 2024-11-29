@@ -2,7 +2,10 @@
 title: "UTM STA Data Analysis Activities."
 author: "Asal Aslemand, Jaiditya Dev"
 date: "`r Sys.Date()`"
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:
+    number_sections: false
+numbered: false
 site: bookdown::bookdown_site
 description: "This book contains tutorials for UTM Statistics, including preparation steps, activities, and reflection."
 license: "Creative Commons Attribution-NonCommercial 4.0 International License"

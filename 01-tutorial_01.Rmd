@@ -1,10 +1,14 @@
+---
+title: "Tutorial 1: Exploring Categorical Data"
+output: bookdown::gitbook
+---
 # Tutorial 1 - Exploring Categorical Data
 
 ## Pre-Task Tutorial Activity
 
 The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3502) took a random sample of 6,015 adult Canadians and collected information on their level of education and whether or not they own a home. The variables "Education Level" and "Home Ownership" are measured as follows:
 
-### Education Level:
+### Education Level
 <ol style="margin-left: 20px;">
   <li>No High School Diploma</li>
   <li>High School Diploma or GED</li>
@@ -12,7 +16,7 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
   <li>College Degree</li>
 </ol>
 
-### Home Ownership:
+### Home Ownership
 <ol style="margin-left: 20px;">
   <li>Yes (Owns House/Condo/Ranch/Farm/Mobile Home/etc.)</li>
   <li>No (Otherwise)</li>

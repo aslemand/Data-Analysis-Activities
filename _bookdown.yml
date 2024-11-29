@@ -3,3 +3,7 @@ language:
   ui:
     chapter_name: "Chapter "
 output_dir: "docs"
+rmd_files:
+  - index.Rmd            # Introduction (not numbered)
+  - 01-tutorial_01.Rmd   # Start with Tutorial 1
+number_sections: true    # Enable numbering globally
