@@ -1,0 +1,87 @@
+# Tutorial 1 - Exploring Categorical Data
+
+## Pre-Task Tutorial Activity
+
+The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3502) took a random sample of 6,015 adult Canadians and collected information on their level of education and whether or not they own a home. The variables "Education Level" and "Home Ownership" are measured as follows:
+
+### Education Level:
+<ol style="margin-left: 20px;">
+  <li>No High School Diploma</li>
+  <li>High School Diploma or GED</li>
+  <li>Some College</li>
+  <li>College Degree</li>
+</ol>
+
+### Home Ownership:
+<ol style="margin-left: 20px;">
+  <li>Yes (Owns House/Condo/Ranch/Farm/Mobile Home/etc.)</li>
+  <li>No (Otherwise)</li>
+</ol>
+
+---
+
+## Steps to Complete the Activity:
+
+1. **Use Chrome or Firefox browsers** and download the following two files to your computer:
+   - [Data file: Home_SCF2013.csv](https://q.utoronto.ca/courses/367245/files/32675907/download)
+   - [R Script: Home_SCF2013.R](https://q.utoronto.ca/courses/367245/files/32892565/download)
+
+2. Copy and paste this link into your web browser: [https://r.datatools.utoronto.ca](https://r.datatools.utoronto.ca) and select **RStudio**.
+
+3. Log in using your **UTORid**.
+
+4. In RStudio, in the file pane (bottom-right of the screen), create a folder named `STA Data Activity`. Inside this folder, create a sub-folder named `Module 1`.
+
+5. From the file location in RStudio, create a new project:
+   - Name it `Home`.
+   - Choose `STA258 > Module 1` as the directory to save the project.
+
+6. Upload the two downloaded files into your `Home` project folder.
+
+7. Open the R script from your `Home` project folder.
+
+8. Run each line of code in the R script.
+
+9. Begin by reading/importing the data file in R.
+
+10. Copy and paste each R output that appears in the R console (bottom-left pane) into a Word document or other text editor.
+
+11. Save your R outputs (your copied and pasted statistical results).
+
+12. Modify the R script:
+    - Between lines 124 and 143, make a small change to the script. Specifically, insert your last name onto the bar plot in line 140.
+
+13. Submit your final plot to the assignment page.
+
+---
+
+## Related Questions
+
+1. Suppose we are interested in investigating the relationship between **home ownership** and **education level**:
+   - Identify the response and explanatory variable.
+   - Identify the role of each variable, their type, and their scale of measurement.
+
+2. **Find the marginal proportions** of the response variable, convert them to percentages, and interpret.
+
+3. **Find the conditional proportions** of the response variable for each category of the explanatory variable. Convert them to percentages and interpret.
+
+4. Compute the **difference between the proportion** of homeownership for the "No High School Diploma" group and the "College Degree" group. Interpret this difference in context.
+
+5. Compute the **ratio between the proportion** of homeownership for the "No High School Diploma" group and the "College Degree" group. Interpret this ratio in context.
+
+6. Using **data-based arguments** (i.e., comparing conditional proportions), describe the relationship between the variables **"home ownership"** and **"education level"**.
+
+---
+
+## Submission Instructions
+
+- Upload your clustered bar plot to the assignment page on Quercus.
+- Accepted file formats: `.doc`, `.pdf`, `.jpeg`, or `.png`.
+
+---
+
+## Tutorial Activity
+
+Below are the resources available for this tutorial. Click on the links to download them:
+
+- [R Outputs for Tutorial 1 Activity: Home Ownership and Education Level](https://raw.githubusercontent.com/<username>/<repository>/main/path-to-file/R_Outputs_Tutorial1.pdf)

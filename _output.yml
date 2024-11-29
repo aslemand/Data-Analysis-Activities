@@ -1,0 +1,13 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+      after: |
+        <li><a href="https://github.com/aslemand/Data-Analysis-Activities" target="blank">Published with bookdown</a></li>
+    # Do not need a download button at all!
+    download: no
+    sharing:
+      github: yes
+      twitter: no
+      facebook: no  # Remove Facebook
