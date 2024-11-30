@@ -141,32 +141,60 @@ No (Otherwise)
 </div>
 <div id="r-steps" class="section level2 hasAnchor">
 <h2>R Steps<a href="activity-1---exploring-categorical-data.html#r-steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To complete this activity on your local computer with R and RStudio installed, follow these steps:</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Use Chrome or Firefox browsers</strong> and download the following two files to your computer:</p>
+<li><strong>Download the required files</strong> to your computer using the following links:
 <ul>
 <li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_1/Home_SCF2013.csv">Data file: Home_SCF2013.csv</a></li>
 <li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_1/Home_SCF2013.R">R Script: Home_SCF2013.R</a></li>
 </ul></li>
-<li><p>Copy and paste this link into your web browser: <a href="https://r.datatools.utoronto.ca">https://r.datatools.utoronto.ca</a> and select <strong>RStudio</strong>.</p></li>
-<li><p>Log in using your <strong>UTORid</strong>.</p></li>
-<li><p>In RStudio, in the file pane (bottom-right of the screen), create a folder name it <code>Stats Activities</code>. Inside this folder, create a sub-folder named <code>Activity 1</code>.</p></li>
-<li><p>From the file location in RStudio, create a new project:</p>
+<li><strong>Set up your project directory</strong>:
 <ul>
-<li>Name it <code>Home</code>.</li>
-<li>Choose <code>Stats Activities &gt; Activity 1</code> as the directory to save the project.</li>
+<li>Create a folder on your computer named <code>Stats Activities</code>.</li>
+<li>Inside this folder, create a sub-folder named <code>Activity 1</code>.</li>
 </ul></li>
-<li><p>Upload the two downloaded files into your <code>Home</code> project folder.</p></li>
-<li><p>Open the R script from your <code>Home</code> project folder.</p></li>
-<li><p>Run each line of code in the R script.</p></li>
-<li><p>Begin by reading/importing the data file in R.</p></li>
-<li><p>Copy and paste each R output that appears in the R console (bottom-left pane) into a Word document or other text editor. Save your R outputs (your copied and pasted statistical results).</p></li>
-<li><p>Modify the R script:</p>
+<li><strong>Start RStudio and create a new project</strong>:
 <ul>
-<li>Between lines 124 and 143, make a small change to the R script.</li>
-<li>Insert your last name onto the bar plot in line 140.</li>
-<li>Export and save your plot in your computer.</li>
+<li>Open RStudio.</li>
+<li>Go to <code>File &gt; New Project &gt; Existing Directory</code>.</li>
+<li>Browse to the folder you created: <code>Stats Activities/Activity 1</code>.</li>
+<li>Click <code>Create Project</code>.</li>
 </ul></li>
-<li><p>Upload your bar plot to the assignment page in Quercus. The accepted file formats in Quercus are: <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code>.</p></li>
+<li><strong>Upload the downloaded files</strong>:
+<ul>
+<li>Copy the downloaded <code>Home_SCF2013.csv</code> and <code>Home_SCF2013.R</code> files into the <code>Activity 1</code> folder.</li>
+</ul></li>
+<li><strong>Open the R script</strong>:
+<ul>
+<li>In RStudio, open the <code>Home_SCF2013.R</code> file by selecting it from the <code>Files</code> tab (bottom-right pane).</li>
+</ul></li>
+<li><strong>Run the R script line by line</strong>:
+<ul>
+<li>Highlight each line of code in the script and click <code>Run</code> (top-right of the editor pane), or press <code>Ctrl+Enter</code> (Windows) / <code>Cmd+Enter</code> (Mac).</li>
+</ul></li>
+<li><strong>Begin data analysis</strong>:
+<ul>
+<li>Start by reading/importing the data file into RStudio with the <code>read.csv()</code> function.</li>
+<li>Examine the data structure and variable names as instructed in the R script.</li>
+</ul></li>
+<li><strong>Copy R outputs</strong>:
+<ul>
+<li>After running each line of code, copy the outputs from the R console (bottom-left pane) into a Word document or any text editor for submission or future reference.</li>
+</ul></li>
+<li><strong>Modify the R script</strong>:
+<ul>
+<li>Edit the script between lines 124 and 143.</li>
+<li>Insert your last name onto the bar plot (line 140).</li>
+</ul></li>
+<li><strong>Export your bar plot</strong>:
+<ul>
+<li>Save your bar plot as a <code>.jpeg</code> or <code>.png</code> file. Use the <code>ggsave()</code> function or the <code>Export</code> button in RStudio’s Plots pane.</li>
+</ul></li>
+<li><strong>Submit your work</strong>:
+<ul>
+<li>Save your bar plot as a <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> file.</li>
+<li>Share the output with your instructor or teaching assistant for assessment, as per their preferred submission method.</li>
+</ul></li>
 </ol>
 <hr />
 </div>

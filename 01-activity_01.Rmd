@@ -25,36 +25,49 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
 
 ## R Steps
 
-1. **Use Chrome or Firefox browsers** and download the following two files to your computer:
+To complete this activity on your local computer with R and RStudio installed, follow these steps:
+
+1. **Download the required files** to your computer using the following links:
    - [Data file: Home_SCF2013.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_1/Home_SCF2013.csv)
    - [R Script: Home_SCF2013.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_1/Home_SCF2013.R)
 
-2. Copy and paste this link into your web browser: [https://r.datatools.utoronto.ca](https://r.datatools.utoronto.ca) and select **RStudio**.
+2. **Set up your project directory**:
+   - Create a folder on your computer named `Stats Activities`.
+   - Inside this folder, create a sub-folder named `Activity 1`.
 
-3. Log in using your **UTORid**.
+3. **Start RStudio and create a new project**:
+   - Open RStudio.
+   - Go to `File > New Project > Existing Directory`.
+   - Browse to the folder you created: `Stats Activities/Activity 1`.
+   - Click `Create Project`.
 
-4. In RStudio, in the file pane (bottom-right of the screen), create a folder name it `Stats Activities`. Inside this folder, create a sub-folder named `Activity 1`.
+4. **Upload the downloaded files**:
+   - Copy the downloaded `Home_SCF2013.csv` and `Home_SCF2013.R` files into the `Activity 1` folder.
 
-5. From the file location in RStudio, create a new project:
-   - Name it `Home`.
-   - Choose `Stats Activities > Activity 1` as the directory to save the project.
+5. **Open the R script**:
+   - In RStudio, open the `Home_SCF2013.R` file by selecting it from the `Files` tab (bottom-right pane).
 
-6. Upload the two downloaded files into your `Home` project folder.
+6. **Run the R script line by line**:
+   - Highlight each line of code in the script and click `Run` (top-right of the editor pane), or press `Ctrl+Enter` (Windows) / `Cmd+Enter` (Mac).
 
-7. Open the R script from your `Home` project folder.
+7. **Begin data analysis**:
+   - Start by reading/importing the data file into RStudio with the `read.csv()` function.
+   - Examine the data structure and variable names as instructed in the R script.
 
-8. Run each line of code in the R script.
+8. **Copy R outputs**:
+   - After running each line of code, copy the outputs from the R console (bottom-left pane) into a Word document or any text editor for submission or future reference.
 
-9. Begin by reading/importing the data file in R.
+9. **Modify the R script**:
+   - Edit the script between lines 124 and 143.
+   - Insert your last name onto the bar plot (line 140).
 
-10. Copy and paste each R output that appears in the R console (bottom-left pane) into a Word document or other text editor. Save your R outputs (your copied and pasted statistical results).
+10. **Export your bar plot**:
+    - Save your bar plot as a `.jpeg` or `.png` file. Use the `ggsave()` function or the `Export` button in RStudio's Plots pane.
 
-11. Modify the R script:
-    - Between lines 124 and 143, make a small change to the R script. 
-    - Insert your last name onto the bar plot in line 140.
-    - Export and save your plot in your computer.
+11. **Submit your work**:
+    - Save your bar plot as a `.doc`, `.pdf`, `.jpeg`, or `.png` file.
+    - Share the output with your instructor or teaching assistant for assessment, as per their preferred submission method.
 
-12. Upload your bar plot to the assignment page in Quercus. The accepted file formats in Quercus are: `.doc`, `.pdf`, `.jpeg`, or `.png`.
 
 ---
 
