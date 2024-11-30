@@ -23,7 +23,7 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
 
 ---
 
-## Data Analysis Steps
+## R Steps
 
 1. **Use Chrome or Firefox browsers** and download the following two files to your computer:
    - [Data file: Home_SCF2013.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_1/Home_SCF2013.csv)
@@ -58,7 +58,7 @@ The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/im
 
 ---
 
-## Related Questions about Data Analysis
+## Related Questions
 
 1. Suppose we are interested in investigating the relationship between **home ownership** and **education level**:
    - Identify the response and explanatory variable.
