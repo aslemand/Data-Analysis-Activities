@@ -1,27 +1,30 @@
 ---
-title: "UTM Statistics Data Analysis Activities"
-author: "Asal Aslemand, Jaiditya Dev"
+title: "Data Analysis Activities"
+author: "Asal Aslemand, Jaiditya Dev, and Sinan Ma"
 date: "`r Sys.Date()`"
 output: 
   bookdown::gitbook:
     number_sections: false
 numbered: false
 site: bookdown::bookdown_site
-description: "This book contains tutorials for UTM Statistics, including preparation steps, activities, and reflection."
+description: "This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." 
 license: "Creative Commons Attribution-NonCommercial 4.0 International License"
 ---
 
 # Welcome to Data Analysis Activities
 
-This resource contains all tutorial materials for STA Data Analysis Activities. Each chapter corresponds to one tutorial week, including: **1) Preparation steps**, **2) Tutorial activities**, and **3) Data files and scripts**
+```{r out.width = "65%", fig.align = "center", echo = FALSE}
+knitr::include_graphics("Chi-square.jpg")
+```
 
+This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each chapter corresponds to one statistical activity with a set of learning objectives.
 
-Click on the links below to access specific tutorials:
+Click on a link below to access a specific statistical activity.
 
-- [Week 1: Exploring Categorical Data](#tutorial-1---exploring-categorical-data)
+- [Activity 1: Exploring Categorical Data](#activity-1---exploring-categorical-data)
 
 ---
 
-**Note:** Some solutions and R outputs are not included here to encourage independent learning.
+**Note:** Solution to each statistical activity is shared at the instructor's discretion.
 
 
