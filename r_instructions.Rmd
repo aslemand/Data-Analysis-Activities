@@ -1,0 +1,60 @@
+---
+output: bookdown::gitbook
+---
+
+# How to Set Up R for Data Analysis Activities
+
+Follow these instructions to access and use R for working with the provided CSV and R script files:
+
+## Step 1: Download the Required Files
+
+Each activity comes with two files:
+1. A CSV data file.
+2. An R script.
+
+You can download these files from the respective activity pages in this resource.
+
+---
+
+## Step 2: Set Up Your Project Directory
+
+1. On your computer, create a folder named `Stats Activities`.
+2. Inside this folder, create a sub-folder for the activity you are working on (e.g., `Activity 1`).
+
+---
+
+## Step 3: Start RStudio and Create a New Project
+
+1. Open RStudio.
+2. Go to `File > New Project > Existing Directory`.
+3. Browse to the folder you created for the activity (e.g., `Stats Activities/Activity 1`).
+4. Click `Create Project`.
+
+---
+
+## Step 4: Upload the Files to RStudio
+
+1. Copy the downloaded CSV and R script files into the activity folder.
+2. Use the `Files` pane in RStudio (bottom-right) to ensure they appear in your project directory.
+
+---
+
+## Step 5: Run the R Script
+
+1. Open the R script file in RStudio by clicking on it in the `Files` pane.
+2. Highlight each line of code in the script and click `Run` (top-right of the editor pane) or press `Ctrl+Enter` (Windows) / `Cmd+Enter` (Mac).
+
+---
+
+## Step 6: Save and Export Outputs
+
+1. Save the bar plot or other visualizations by clicking the `Export` button in the `Plots` pane or using the `ggsave()` function in R.
+2. Save your R console outputs into a text or Word document for reference.
+
+---
+
+## Step 7: Submit Your Work
+
+- Share your results with your instructor or teaching assistant for assessment.
+- Accepted file formats include `.doc`, `.pdf`, `.jpeg`, or `.png`.
+

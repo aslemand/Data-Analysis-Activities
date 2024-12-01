@@ -1,0 +1,83 @@
+Country,Gender,Support_Network
+Australia,Male,93
+Austria,Male,92
+Belgium,Male,92
+Canada,Male,93
+Czech Republic,Male,95
+Denmark,Male,93
+Finland,Male,94
+France,Male,92
+Germany,Male,91
+Greece,Male,77
+Hungary,Male,92
+Iceland,Male,99
+Ireland,Male,96
+Italy,Male,92
+Japan,Male,84
+Korea,Male,74
+Luxembourg,Male,91
+Mexico,Male,77
+Netherlands,Male,96
+New Zealand,Male,95
+Norway,Male,96
+Poland,Male,93
+Portugal,Male,88
+Slovak Republic,Male,94
+Spain,Male,93
+Sweden,Male,94
+Switzerland,Male,93
+Türkiye,Male,82
+United Kingdom,Male,89
+United States,Male,93
+Brazil,Male,86
+Chile,Male,88
+Estonia,Male,93
+Israel,Male,95
+Latvia,Male,89
+Russia,Male,88
+Slovenia,Male,95
+South Africa,Male,89
+Colombia,Male,76
+Lithuania,Male,89
+Costa Rica,Male,80
+Australia,Female,94
+Austria,Female,93
+Belgium,Female,87
+Canada,Female,93
+Czech Republic,Female,97
+Denmark,Female,97
+Finland,Female,98
+France,Female,96
+Germany,Female,89
+Greece,Female,79
+Hungary,Female,96
+Iceland,Female,98
+Ireland,Female,96
+Italy,Female,86
+Japan,Female,93
+Korea,Female,86
+Luxembourg,Female,91
+Mexico,Female,76
+Netherlands,Female,92
+New Zealand,Female,95
+Norway,Female,96
+Poland,Female,95
+Portugal,Female,86
+Slovak Republic,Female,95
+Spain,Female,94
+Sweden,Female,93
+Switzerland,Female,95
+Türkiye,Female,88
+United Kingdom,Female,96
+United States,Female,94
+Brazil,Female,80
+Chile,Female,88
+Estonia,Female,97
+Israel,Female,96
+Latvia,Female,94
+Russia,Female,89
+Slovenia,Female,95
+South Africa,Female,89
+Colombia,Female,83
+Lithuania,Female,88
+Costa Rica,Female,85

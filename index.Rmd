@@ -22,9 +22,8 @@ This book contains a variety of statistical activities using real-life data sets
 Click on a link below to access a specific statistical activity.
 
 - [Activity 1: Exploring Categorical Data](#activity-1---exploring-categorical-data)
+- [Activity 2 - Exploring Quantitative Data](#activity-2---exploring-quantitative-data)
 
 ---
 
 **Note:** Solution to each statistical activity is shared at the instructor's discretion.
-
-

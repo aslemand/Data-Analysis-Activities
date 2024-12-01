@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Activity 1 - Exploring Categorical Data | Data Analysis Activities</title>
+  <title>Activity 2 - Exploring Quantitative Data | Data Analysis Activities</title>
   <meta name="description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Activity 1 - Exploring Categorical Data | Data Analysis Activities" />
+  <meta property="og:title" content="Activity 2 - Exploring Quantitative Data | Data Analysis Activities" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Activity 1 - Exploring Categorical Data | Data Analysis Activities" />
+  <meta name="twitter:title" content="Activity 2 - Exploring Quantitative Data | Data Analysis Activities" />
   
   <meta name="twitter:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="activity-2---exploring-quantitative-data.html"/>
+<link rel="prev" href="activity-1---exploring-categorical-data.html"/>
+<link rel="next" href="activity-3---sampling-distributions-related-to-the-normal-model.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -196,102 +196,59 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="activity-1---exploring-categorical-data" class="section level1 hasAnchor">
-<h1>Activity 1 - Exploring Categorical Data<a href="activity-1---exploring-categorical-data.html#activity-1---exploring-categorical-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="context-of-data" class="section level2 hasAnchor">
-<h2>Context of Data<a href="activity-1---exploring-categorical-data.html#context-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=3502"><strong>Survey of Consumer Finances</strong> (SCF, 2013)</a> took a random sample of 6,015 adult Canadians and collected information on their level of education and whether or not they own a home. The variables “Education Level” and “Home Ownership” are measured as follows:</p>
-<div id="education-level" class="section level3 hasAnchor">
-<h3>Education Level<a href="activity-1---exploring-categorical-data.html#education-level" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="margin-left: 20px;">
-<li>
-No High School Diploma
-</li>
-<li>
-High School Diploma or GED
-</li>
-<li>
-Some College
-</li>
-<li>
-College Degree
-</li>
-</ol>
-</div>
-<div id="home-ownership" class="section level3 hasAnchor">
-<h3>Home Ownership<a href="activity-1---exploring-categorical-data.html#home-ownership" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="margin-left: 20px;">
-<li>
-Yes (Owns House/Condo/Ranch/Farm/Mobile Home/etc.)
-</li>
-<li>
-No (Otherwise)
-</li>
-</ol>
+<div id="activity-2---exploring-quantitative-data" class="section level1 hasAnchor">
+<h1>Activity 2 - Exploring Quantitative Data<a href="activity-2---exploring-quantitative-data.html#activity-2---exploring-quantitative-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="context-of-data-1" class="section level2 hasAnchor">
+<h2>Context of Data<a href="activity-2---exploring-quantitative-data.html#context-of-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The <a href="http://www.oecd.org/about/"><strong>Organisation of Economic Cooperation and Development (OECD)</strong></a> gathers various information regarding OECD countries and its partners to promote policies that aim to improve the economic and social well-being of people around the world. From the <strong>Better Life Index (BLI, 2021)</strong>, a program conducted by OECD, you will analyze a quantitative variable named <strong>Social Network Support</strong>. This variable reflects the percentage of males and females aged 15 years and over in 41 OECD countries who perceive their social network as having relatives or friends that they can count on to help them in times of need and trouble.</p>
 <hr />
 </div>
-</div>
-<div id="r-setup" class="section level2 hasAnchor">
-<h2>R Setup<a href="activity-1---exploring-categorical-data.html#r-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="r-setup-1" class="section level2 hasAnchor">
+<h2>R Setup<a href="activity-2---exploring-quantitative-data.html#r-setup-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>To set up and use R for this activity, follow the general instructions provided here:<br />
 <a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong></a>.</p>
 <p>Once you’ve set up your project and loaded the provided files, proceed with the activity-specific instructions below.</p>
 <hr />
 </div>
-<div id="activity-instructions" class="section level2 hasAnchor">
-<h2>Activity Instructions<a href="activity-1---exploring-categorical-data.html#activity-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="activity-instructions-1" class="section level2 hasAnchor">
+<h2>Activity Instructions<a href="activity-2---exploring-quantitative-data.html#activity-instructions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><p>Open the R script <code>Home_SCF2013.R</code> and run it line by line in RStudio.</p></li>
-<li><p>Examine the data using the <code>str()</code> function to understand its structure and variable names.</p></li>
-<li><p>Generate and interpret bar plots to visualize the relationship between education level and home ownership.</p></li>
-<li><p>Modify the bar plot code (lines 124 to 143) to include your last name in the title:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="activity-1---exploring-categorical-data.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="activity-1---exploring-categorical-data.html#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="activity-1---exploring-categorical-data.html#cb1-3" tabindex="-1"></a><span class="co"># Exercise.</span></span>
-<span id="cb1-4"><a href="activity-1---exploring-categorical-data.html#cb1-4" tabindex="-1"></a><span class="co"># We will construct a side-by-side (clustered) bar chart of the data</span></span>
-<span id="cb1-5"><a href="activity-1---exploring-categorical-data.html#cb1-5" tabindex="-1"></a><span class="co"># bar.plot is a name where we want to save the plot and its features</span></span>
-<span id="cb1-6"><a href="activity-1---exploring-categorical-data.html#cb1-6" tabindex="-1"></a><span class="co"># ggplot function will make a canvas, </span></span>
-<span id="cb1-7"><a href="activity-1---exploring-categorical-data.html#cb1-7" tabindex="-1"></a><span class="co"># and will make the plot ready using the data set and its variables of interest</span></span>
-<span id="cb1-8"><a href="activity-1---exploring-categorical-data.html#cb1-8" tabindex="-1"></a>bar.plot <span class="ot">=</span> <span class="fu">ggplot</span>(Home2, <span class="fu">aes</span>(<span class="at">x =</span> Education_Level, <span class="at">fill =</span> Home_Ownership))</span>
-<span id="cb1-9"><a href="activity-1---exploring-categorical-data.html#cb1-9" tabindex="-1"></a><span class="co"># We will add the bars to the plot of the data</span></span>
-<span id="cb1-10"><a href="activity-1---exploring-categorical-data.html#cb1-10" tabindex="-1"></a><span class="co"># As well, we will add the legends and position it to the right-hand side</span></span>
-<span id="cb1-11"><a href="activity-1---exploring-categorical-data.html#cb1-11" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>)</span>
-<span id="cb1-12"><a href="activity-1---exploring-categorical-data.html#cb1-12" tabindex="-1"></a><span class="co"># We will add a label to the x-axis, </span></span>
-<span id="cb1-13"><a href="activity-1---exploring-categorical-data.html#cb1-13" tabindex="-1"></a><span class="co"># We will differentiate the bars by filling in the levels of the response variable</span></span>
-<span id="cb1-14"><a href="activity-1---exploring-categorical-data.html#cb1-14" tabindex="-1"></a><span class="co"># We will add a title and a subtitle to the plot</span></span>
-<span id="cb1-15"><a href="activity-1---exploring-categorical-data.html#cb1-15" tabindex="-1"></a><span class="co"># And, we will centre the position of both the title and the subtitle</span></span>
-<span id="cb1-16"><a href="activity-1---exploring-categorical-data.html#cb1-16" tabindex="-1"></a><span class="co"># Modify line 140 with your last-name in the subtitle</span></span>
-<span id="cb1-17"><a href="activity-1---exploring-categorical-data.html#cb1-17" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">xlab =</span> <span class="st">&quot;Education Level&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Home Ownership&quot;</span>,</span>
-<span id="cb1-18"><a href="activity-1---exploring-categorical-data.html#cb1-18" tabindex="-1"></a>                           <span class="at">title =</span> <span class="st">&quot;Bar Plot of Home Ownership and Education Level&quot;</span>, </span>
-<span id="cb1-19"><a href="activity-1---exploring-categorical-data.html#cb1-19" tabindex="-1"></a>                           <span class="at">subtitle =</span> <span class="st">&quot;Constructed by You&quot;</span>)</span>
-<span id="cb1-20"><a href="activity-1---exploring-categorical-data.html#cb1-20" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>), </span>
-<span id="cb1-21"><a href="activity-1---exploring-categorical-data.html#cb1-21" tabindex="-1"></a>                            <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))</span>
-<span id="cb1-22"><a href="activity-1---exploring-categorical-data.html#cb1-22" tabindex="-1"></a>bar.plot</span></code></pre></div></li>
-<li><p>Save the modified bar plot as a <code>.jpeg</code> or <code>.png</code> file.</p></li>
+<li><p>Open the R script <code>Social.R</code> and run it line by line in RStudio.</p></li>
+<li><p>Begin by reading/importing the data file <code>Social.csv</code> into R.</p></li>
+<li><p>Examine the data structure and variables using <code>str()</code> and summary statistics functions.</p></li>
+<li><p>Create side-by-side boxplots to compare distributions of <strong>Social Network Support</strong> percentages for males and females.</p></li>
+<li><p>Modify the plot title (line 86 in the R script) to include your last name. For example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="activity-2---exploring-quantitative-data.html#cb2-1" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Boxplot of Data Constructed by You&quot;</span>)</span></code></pre></div></li>
+<li><p>Save the boxplot as a <code>.jpeg</code> or <code>.png</code> file.</p></li>
 </ol>
 <hr />
 </div>
-<div id="related-questions" class="section level2 hasAnchor">
-<h2>Related Questions<a href="activity-1---exploring-categorical-data.html#related-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="related-questions-1" class="section level2 hasAnchor">
+<h2>Related Questions<a href="activity-2---exploring-quantitative-data.html#related-questions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After completing the activity, answer the following questions using your results:</p>
 <ol style="list-style-type: decimal">
-<li><p>Suppose we are interested in investigating the relationship between <strong>home ownership</strong> and <strong>education level</strong>:</p>
+<li>Refer to your statistical analysis of percentages of perceived social network support for males and females. Use side-by-side boxplots and summary statistics to compare the distributions.
 <ul>
-<li>Identify the response and explanatory variable.</li>
-<li>Identify the role of each variable, their type, and their scale of measurement.</li>
+<li>Compare the shapes, centers, and spreads of both distributions.<br />
+</li>
+<li>Identify potential outliers using the 1.5IQR rule. For any outlier(s), determine how many standard deviations they are away from the overall mean of the distribution.</li>
 </ul></li>
-<li><p>Find the marginal proportions of the response variable, convert them to percentages, and interpret.</p></li>
-<li><p>Find the conditional proportions of the response variable for each category of the explanatory variable. Convert them to percentages and interpret.</p></li>
-<li><p>Compute the difference between the proportion of homeownership for the “No High School Diploma” group and the “College Degree” group. Interpret this difference in context.</p></li>
-<li><p>Compute the ratio between the proportion of homeownership for the “No High School Diploma” group and the “College Degree” group. Interpret this ratio in context.</p></li>
-<li><p>Using data-based arguments (i.e., comparing conditional proportions), describe the relationship between the variables <strong>“home ownership”</strong> and <strong>“education level”</strong>.</p></li>
+<li>Use the boxplot and summary statistics for the differences between females’ and males’ percentages of perceived social network support (in each country) to describe what this plot reveals that the side-by-side boxplots do not.
+<ul>
+<li>Discuss the shape, center, and spread of the differences.<br />
+</li>
+<li>Identify suspect outliers using the 1.5IQR rule and calculate their deviation from the overall mean.<br />
+</li>
+<li>Explain why the boxplot of differences is more insightful for understanding differences between males and females across OECD countries.</li>
+</ul></li>
 </ol>
 <hr />
 </div>
-<div id="submission-instructions" class="section level2 hasAnchor">
-<h2>Submission Instructions<a href="activity-1---exploring-categorical-data.html#submission-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="submission-instructions-1" class="section level2 hasAnchor">
+<h2>Submission Instructions<a href="activity-2---exploring-quantitative-data.html#submission-instructions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li>Save your bar plot as a <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> file.</li>
-<li>Provide your file to your instructor for feedback or assessment.</li>
+<li>Save your boxplot of differences in percentages of perceived social support network as a <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> file.</li>
+<li>Share your file with your instructor or teaching assistant for feedback or assessment.</li>
 </ul>
 
 </div>
@@ -301,8 +258,8 @@ No (Otherwise)
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity-2---exploring-quantitative-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity-1---exploring-categorical-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="activity-3---sampling-distributions-related-to-the-normal-model.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

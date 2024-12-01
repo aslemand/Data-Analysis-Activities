@@ -1,0 +1,75 @@
+---
+output: bookdown::gitbook
+---
+# Activity 3 - Sampling Distributions Related to the Normal Model
+
+## Context of Data
+
+At-term newborns in Canada vary in weight according to an approximate **Normal model**, with the following parameters:
+- Mean: 3500 grams
+- Standard Deviation: 500 grams
+
+The objective of this activity is to explore the sampling distributions of sample means and understand how they relate to the normal distribution.
+
+---
+
+## R Setup
+
+To set up and use R for this activity, follow the general instructions provided here:  
+[**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities).
+
+Once you’ve set up your project and loaded the provided files, proceed with the activity-specific instructions below.
+
+---
+
+## Activity Instructions
+
+1. Open the R script `Newborn_Weights.R` and start running the provided code.
+2. Modify the R code as follows:
+   - **Line 7**: Insert a unique seed number.
+   ```{r, eval = FALSE}
+   # Enter your seed number in line 8.
+   set.seed( )
+   ```
+   - **Line 39**: Add your last name to the title of the plot.
+   ```{r, eval = FALSE}
+   # Make a change to line 40. Include your last name in the main (title) argument.
+   hist(Xbar, 
+      main = "Histogram of Sample Means \n Conducted by You", 
+      xlab = "Xbar: Sample Means for Total Weights (in grams) of New Borns", 
+      col = "lavender")
+   ```
+3. Simulate 100 samples of size \(n = 30\) from the population distribution of newborn weights. Store the means in a variable named `Xbar`.
+4. Construct a frequency histogram of the sampling distribution of sample means. Obtain summary statistics and interpret:
+   - Shape
+   - Center
+   - Spread
+5. Experiment with other sample sizes (\(n = 2, 5, 15, 30, 100, 300\)) using different replication numbers (\(n = 1000\)):
+   - Plot the sampling distributions of sample means for these sample sizes.
+   - Identify which sample size gives the smallest **Standard Error**.
+
+---
+
+## Related Questions
+
+After completing the activity, answer the following questions:
+
+1. **Sampling Distribution Analysis**:
+   - Using the boxplot and Normal QQ plot, describe the sampling distribution of your sampled data. Justify your answer with both visualizations.
+
+2. **IQR Extrapolation**:
+   - Refer to the summary statistics. Write a sentence that extrapolates the **IQR** for this sample into a statement about the population. Ensure your wording is precise.
+
+3. **Sampling Distribution of Means**:
+   - For \(n = 30\), describe the sampling distribution of sample means (shape, center, and spread). Use summary statistics and histogram to support your analysis.
+
+4. **Effect of Sample Size**:
+   - Compare sampling distributions for different sample sizes (\(n = 2, 5, 15, 30, 100, 300\)).
+   - Identify which sample size gives the smallest **Standard Error** and explain why.
+
+---
+
+## Submission Instructions
+
+- Save the histogram of the sampling distribution of sample means for newborn weights (\(n = 30\)) as a `.doc`, `.pdf`, `.jpeg`, or `.png` file.
+- Provide your file to your instructor or teaching assistant for feedback or assessment.
