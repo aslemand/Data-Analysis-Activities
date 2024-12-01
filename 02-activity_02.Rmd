@@ -20,8 +20,8 @@ Once you’ve set up your project and loaded the provided files, proceed with th
 
 ## Activity Instructions
 
-1. Open the R script `Social.R` and run it line by line in RStudio.
-2. Begin by reading/importing the data file `Social.csv` into R.
+1. Open the R script [`Social.R`](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_2/Social.R) and run it line by line in RStudio.
+2. Begin by reading/importing the data file [`Social.csv`](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_2/Social.csv) into R.
 3. Examine the data structure and variables using `str()` and summary statistics functions.
 4. Create side-by-side boxplots to compare distributions of **Social Network Support** percentages for males and females.
 5. Modify the plot title (line 86 in the R script) to include your last name. For example:

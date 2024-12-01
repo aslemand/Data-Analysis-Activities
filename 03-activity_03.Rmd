@@ -24,7 +24,7 @@ Once you’ve set up your project and loaded the provided files, proceed with th
 
 ## Activity Instructions
 
-1. Open the R script `Newborn_Weights.R` and start running the provided code.
+1. Open the R script [`Newborn_Weights.R`](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_3/Newborn_Weights.R) and start running the provided code.
 2. Modify the R code as follows:
    - **Line 7**: Insert a unique seed number.
    ```{r, eval = FALSE}

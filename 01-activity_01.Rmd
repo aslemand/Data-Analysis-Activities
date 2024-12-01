@@ -34,7 +34,7 @@ Once you’ve set up your project and loaded the provided files, proceed with th
 
 ## Activity Instructions
 
-1. Open the R script `Home_SCF2013.R` and run it line by line in RStudio.
+1. Open the R script [`Home_SCF2013.R`](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_1/Home_SCF2013.R) along with the data set [`Home_SCF2013.csv`](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_1/Home_SCF2013.csv)  and run it line by line in RStudio.
 2. Examine the data using the `str()` function to understand its structure and variable names.
 3. Generate and interpret bar plots to visualize the relationship between education level and home ownership.
 4. Modify the bar plot code (lines 124 to 143) to include your last name in the title:
