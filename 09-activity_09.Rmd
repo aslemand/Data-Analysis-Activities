@@ -25,8 +25,8 @@ The Canadian Community Health Survey (CCHS, 2018) is a cross-sectional survey th
 Follow these steps to complete the activity and answer the related questions:
 
 1. **Download the required files**:
-   - [Data File: CCHS.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_9/cchs.csv)
-   - [R Script: CCHS.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_9/cchs.R)
+   - [Data File: CCHS.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/data/Activity_9/cchs.csv)
+   - [R Script: CCHS.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_9/CCHS.R)
 
 2. **Set up your R environment**:
    Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  
