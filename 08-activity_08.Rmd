@@ -27,7 +27,7 @@ Complete the following steps and work on answering the related question:
 
 1. **Download the R script**:
    - Download the following R script to your computer:  
-     - [babies.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_9/babies.R)
+     - [babies.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_8/babies.R)
 
 2. **Set up your R environment**:
    - Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  

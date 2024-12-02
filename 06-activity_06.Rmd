@@ -43,7 +43,7 @@ Using the STA123 course grades example, we can conduct an experiment using the f
 ## Steps to Complete the Activity
 
 1. Download the following file to your computer:
-   - [R Script: Hypothesis Testing-Error Probability-Simulation.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_7/Hypothesis-Testing-Error-Probability-Simulation.R)
+   - [R Script: Hypothesis Testing-Error Probability-Simulation.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_6/Hypothesis-Testing-Error-Probability-Simulation.R)
 
 2. Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  
    [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities).

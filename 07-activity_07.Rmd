@@ -27,7 +27,7 @@ Suppose it is claimed that the mean STA123 course grade is 70. The population SD
 ### Complete the following steps and work on answering the related questions:
 
 1. Use Chrome or Firefox to download the following file to your computer:
-   - [R Script: Statistical Power.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_8/Statistical_Power.R)
+   - [R Script: Statistical Power.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_7/Statistical_Power.R)
 2. Follow the [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities). to prepare your environment.
 3. Upload the downloaded R script into the appropriate folder in your project directory.
 4. Open the R script and start running the provided code.
