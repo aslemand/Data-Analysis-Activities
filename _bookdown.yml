@@ -8,5 +8,11 @@ rmd_files:
   - 01-activity_01.Rmd   
   - 02-activity_02.Rmd
   - 03-activity_03.Rmd
+  - 04-activity_04.Rmd
+  - 05-activity_05.Rmd
+  - 06-activity_06.Rmd
+  - 07-activity_07.Rmd
+  - 08-activity_08.Rmd
+  - 09-activity_09.Rmd
   - r_instructions.Rmd
 number_sections: true    # Enable numbering globally

@@ -1,0 +1,94 @@
+---
+output: bookdown::gitbook
+---
+# Activity 9 - Analysis of Categorical Data
+
+## Tutorial Objective
+
+The objective of this week's module is to equip you with the following:
+
+- Conduct Goodness of Fit Test for Analysis of One-way Table
+- Conduct Chi-Square Test of Independence for Analysis of Two-way Table (Association Between Two Categorical Variables)
+- Measure and Detect Pattern of Association
+- Use R to analyze categorical data via RStudio (local setup instructions can be found on the [**How to Access and Use R for Data Analysis Activities** page](#how-to-set-up-r-for-data-analysis-activities)).
+
+---
+
+## Pre-Task Tutorial Activity
+
+The Canadian Community Health Survey (CCHS, 2018) is a cross-sectional survey that collects information related to health status for the Canadian population. The CCHS data is collected from persons aged 12 and over living in the ten provinces and three territories. Excluded from the sampling frame are individuals living on Reserves, institutional residents (health institutions, prisons, etc.), full-time members of the Canadian Forces, and youth aged 12 to 17 living in foster homes. In this activity, you will investigate the relationship between perception of mental health among youth and their gender.
+
+---
+
+### Instructions
+
+Follow these steps to complete the activity and answer the related questions:
+
+1. **Download the required files**:
+   - [Data File: CCHS.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/CCHS.csv)
+   - [R Script: CCHS.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/CCHS.R)
+
+2. **Set up your R environment**:
+   Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  
+   [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities).
+
+3. Open the R script `CCHS.R` from your project folder in RStudio.
+
+4. Run each line of code in the R script, starting with reading/importing the `CCHS.csv` file.
+
+5. **Modify the R code**:
+   - Line 307 in the script requires you to insert your last name into the bar plot title.
+   ```{r, eval = FALSE}
+   # Bar Plots of Age and Positive Mental Health Perception by Gender
+   bar.plot <- ggplot(data = crosstabl, aes(x = Age, y = Percent, 
+                                            fill = Positive.Mental.Health))
+   bar.plot <- bar.plot + geom_bar(stat = "identity", position = "dodge") 
+   bar.plot <- bar.plot + scale_fill_manual(values = c("orange", "grey"), 
+                                            name = "Positive Mental Health Perception")
+   bar.plot <- bar.plot + scale_y_continuous(breaks = seq(0, 100, 10))
+   bar.plot <- bar.plot + labs(y = "Percentages within Age", 
+                               title = "Conditional Distribution of Positive Perception of Mental Health on Age by Gender", 
+                               subtitle = "Constructed by You") # LINE 307
+   bar.plot = bar.plot + facet_wrap(~ Gender, scales = "free_x")
+   bar.plot <- bar.plot + theme_bw()
+   bar.plot <- bar.plot + theme(plot.title=element_text(hjust=0.5), 
+                                plot.subtitle = element_text(hjust=0.5))
+   bar.plot
+   ```
+
+6. Save your R outputs, including the statistical results, to a Word document or R Markdown file (optional).
+
+---
+
+## Related Questions
+
+Based on your data analysis (using your R outputs), answer the following related questions:
+
+### Question 1: Gender and Mental Health Perception
+1. Find the conditional distribution of having a positive perception of mental health for males and for females.
+2. Find and interpret the estimated ratio of the conditional proportion of having a positive perception of mental health for males and for females.
+3. Test whether there is a significant association between having a positive perception of mental health for males and for females. Include:
+   - Null and alternative hypotheses
+   - Observed test statistic
+   - Reference distribution
+   - P-value
+   - Conclusion (plain English).
+4. What is the absolute value of the adjusted standardized residuals? Interpret this in the study's context.
+5. Use R to find the 95% confidence interval for the difference between population proportions of males and females who perceived having positive mental health. Interpret this interval in context.
+6. Find the estimated odds of having a positive perception of mental health for males and the estimated odds for females. Describe the strength of association using the estimated odds ratio.
+
+### Question 2: Age and Mental Health Perception
+1. Find the conditional distribution of having a positive perception of mental health for different age groups.
+2. Test whether there is a significant association between having a positive perception of mental health and age group. Include:
+   - Null and alternative hypotheses
+   - Observed test statistic
+   - Reference distribution
+   - P-value
+   - Conclusion (plain English).
+3. What is the absolute value of the adjusted standardized residuals? Interpret this in the study's context.
+
+---
+
+## Required R Output for Submission
+
+Using this assignment page, upload your conditional distribution of perception of mental health on different ages by gender. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.

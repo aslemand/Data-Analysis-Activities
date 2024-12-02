@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Analysis Activities</title>
+  <title>Activity 8 - Comparing Groups | Data Analysis Activities</title>
   <meta name="description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Analysis Activities" />
+  <meta property="og:title" content="Activity 8 - Comparing Groups | Data Analysis Activities" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Analysis Activities" />
+  <meta name="twitter:title" content="Activity 8 - Comparing Groups | Data Analysis Activities" />
   
   <meta name="twitter:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="activity-1---exploring-categorical-data.html"/>
+<link rel="prev" href="activity-7---errors-in-tests-statistical-power-sample-size.html"/>
+<link rel="next" href="activity-9---analysis-of-categorical-data.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -262,38 +262,89 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Analysis Activities</h1>
-<p class="author"><em>Asal Aslemand, Jaiditya Dev, and Sinan Ma</em></p>
-<p class="date"><em>2024-12-01</em></p>
-</div>
-<div id="welcome-to-data-analysis-activities" class="section level1 hasAnchor">
-<h1>Welcome to Data Analysis Activities<a href="index.html#welcome-to-data-analysis-activities" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="Chi-square.jpg" width="65%" style="display: block; margin: auto;" /></p>
-<p>This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each chapter corresponds to one statistical activity with a set of learning objectives.</p>
-<p>Click on a link below to access a specific statistical activity.</p>
-<ul>
-<li><a href="activity-1---exploring-categorical-data.html#activity-1---exploring-categorical-data">Activity 1: Exploring Categorical Data</a></li>
-<li><a href="activity-2---exploring-quantitative-data.html#activity-2---exploring-quantitative-data">Activity 2 - Exploring Quantitative Data</a></li>
-<li><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#activity-3---sampling-distributions-related-to-the-normal-population">Activity 3 - Sampling Distributions Related to the Normal Population</a></li>
-<li><a href="#activity-4---applications-of-limit-theorem">Activity 4 - Applications of Limit Theorem</a></li>
-<li><a href="activity-5---estimation-with-confidence-intervals.html#activity-5---estimation-with-confidence-intervals">Activity 5 - Estimation with Confidence Intervals</a></li>
-<li><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#activity-6---introduction-to-hypothesis-testing-and-concepts">Activity 6 - Introduction to Hypothesis Testing and Concepts</a></li>
-<li><a href="#activity-7---errors-in-tests-statistical-power--sample-size">Activity 7 - Errors in Tests, Statistical Power &amp; Sample Size</a></li>
-<li><a href="activity-8---comparing-groups.html#activity-8---comparing-groups">Activity 8 - Comparing Groups</a></li>
-<li><a href="activity-9---analysis-of-categorical-data.html#activity-9---analysis-of-categorical-data">Activity 9 - Analysis of Categorical Data</a></li>
-</ul>
+<div id="activity-8---comparing-groups" class="section level1 hasAnchor">
+<h1>Activity 8 - Comparing Groups<a href="activity-8---comparing-groups.html#activity-8---comparing-groups" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tutorial-objective-5" class="section level2 hasAnchor">
+<h2>Tutorial Objective<a href="activity-8---comparing-groups.html#tutorial-objective-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The objective of this week’s module is to equip you with the following:
+- Comparing groups
+- Use R/RStudio in a desktop/laptop environment to test relationships between a quantitative variable and a categorical variable.</p>
 <hr />
-<p><strong>Note:</strong> Solution to each statistical activity is shared at the instructor’s discretion.</p>
+</div>
+<div id="pre-task-tutorial-activity-4" class="section level2 hasAnchor">
+<h2>Pre-Task Tutorial Activity<a href="activity-8---comparing-groups.html#pre-task-tutorial-activity-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="context-of-the-problem-1" class="section level3 hasAnchor">
+<h3>Context of the Problem<a href="activity-8---comparing-groups.html#context-of-the-problem-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Every year, the US releases to the public a large data set containing information on births recorded in the country. This data set has been of interest to medical researchers who are studying the relation between habits and practices of expectant mothers and the birth of their children. We will work with a random sample of 1,000 cases from the data set released in 2014.</p>
+<p>We would like to know: is there convincing evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who do not smoke? We will use data from this sample to try to answer this question.</p>
+<hr />
+</div>
+<div id="activity-instructions-3" class="section level3 hasAnchor">
+<h3>Activity Instructions<a href="activity-8---comparing-groups.html#activity-instructions-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Complete the following steps and work on answering the related question:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Download the R script</strong>:
+<ul>
+<li>Download the following R script to your computer:
+<ul>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_9/babies.R">babies.R</a></li>
+</ul></li>
+</ul></li>
+<li><strong>Set up your R environment</strong>:
+<ul>
+<li>Follow the instructions provided on the <strong>How to Access and Use R for Data Analysis Activities</strong> page to set up your R environment:<br />
+<a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong></a>.</li>
+</ul></li>
+<li><strong>Upload the R script</strong>:
+<ul>
+<li>Copy the downloaded R script into the <code>Module 9</code> folder inside your project directory.</li>
+</ul></li>
+<li><strong>Run the R script</strong>:
+<ul>
+<li>Open the R script in RStudio and start running the provided codes.</li>
+</ul></li>
+<li><strong>Modify the R code</strong>:
+<ul>
+<li>In <strong>line 33</strong>, you need to insert your last name in the title of the plot. Make the change to this line and save your updated plot.</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="activity-8---comparing-groups.html#cb10-1" tabindex="-1"></a><span class="co"># Construct a side-by-side boxplots of weights of babies by mothers&#39; smoking habit.</span></span>
+<span id="cb10-2"><a href="activity-8---comparing-groups.html#cb10-2" tabindex="-1"></a><span class="co"># Give an appropriate title and x-y labels (modify the code below).</span></span>
+<span id="cb10-3"><a href="activity-8---comparing-groups.html#cb10-3" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(babies, <span class="fu">aes</span>(<span class="at">x =</span> habit, <span class="at">y =</span> weight, <span class="at">fill =</span> habit)) </span>
+<span id="cb10-4"><a href="activity-8---comparing-groups.html#cb10-4" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">geom_boxplot</span>()</span>
+<span id="cb10-5"><a href="activity-8---comparing-groups.html#cb10-5" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;lightgrey&quot;</span>, <span class="st">&quot;darkorange&quot;</span>), </span>
+<span id="cb10-6"><a href="activity-8---comparing-groups.html#cb10-6" tabindex="-1"></a>                                         <span class="at">name =</span> <span class="st">&quot;Habit&quot;</span>)</span>
+<span id="cb10-7"><a href="activity-8---comparing-groups.html#cb10-7" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Mothers&#39; Smoking Habit&quot;</span>, </span>
+<span id="cb10-8"><a href="activity-8---comparing-groups.html#cb10-8" tabindex="-1"></a>                            <span class="at">y =</span> <span class="st">&quot;Babies&#39; Weights&quot;</span>)</span>
+<span id="cb10-9"><a href="activity-8---comparing-groups.html#cb10-9" tabindex="-1"></a><span class="co"># Center and add a title to the side-by-side boxplots.</span></span>
+<span id="cb10-10"><a href="activity-8---comparing-groups.html#cb10-10" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&quot;Boxplots Constructed by You&quot;</span>) <span class="co"># LINE 33</span></span>
+<span id="cb10-11"><a href="activity-8---comparing-groups.html#cb10-11" tabindex="-1"></a>box.plot <span class="ot">&lt;-</span> box.plot <span class="sc">+</span> <span class="fu">theme_update</span>(<span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">hjust =</span> <span class="fl">0.5</span>))</span>
+<span id="cb10-12"><a href="activity-8---comparing-groups.html#cb10-12" tabindex="-1"></a>box.plot</span></code></pre></div></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="related-questions-7" class="section level2 hasAnchor">
+<h2>Related Questions<a href="activity-8---comparing-groups.html#related-questions-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Based on your R analysis (using your R outputs), answer the following related questions:</p>
+<ol style="list-style-type: decimal">
+<li>Set up appropriate hypotheses to evaluate whether there is a relationship between a mother smoking and average birth weight.</li>
+<li>State the null and alternative hypotheses, the value for the observed test statistic, the reference distribution, the p-value, and the conclusion using plain English.</li>
+</ol>
+<hr />
+</div>
+<div id="required-r-output-for-submission-4" class="section level2 hasAnchor">
+<h2>Required R Output for Submission<a href="activity-8---comparing-groups.html#required-r-output-for-submission-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using this assignment page, upload your side-by-side boxplots of the data. The accepted file formats for Quercus submission are: <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> files.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="activity-1---exploring-categorical-data.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity-7---errors-in-tests-statistical-power-sample-size.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="activity-9---analysis-of-categorical-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

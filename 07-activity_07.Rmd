@@ -1,0 +1,60 @@
+---
+output: bookdown::gitbook
+---
+# Activity 7 - Errors in Tests, Statistical Power & Sample Size
+
+## Tutorial Objective
+
+The objective of this week's module is to equip you with the following:
+- Obtain statistical power.
+- Use statistical power to find sample sizes.
+- Use R/RStudio on a desktop/laptop to explore the relationship between statistical power and sample sizes for different mean values.
+
+---
+
+## Pre-Task Tutorial Activity
+
+### Context of the Problem
+
+Suppose it is claimed that the mean STA123 course grade is 70. The population SD is 4 (suppose sigma is known). Suppose that the population distribution of STA123 course grades is Normal. Suppose we test \( H_0: \mu = 70 \) versus \( H_a: \mu < 70 \). Suppose the true \( \mu \) value is something else (i.e., 68). So \( H_0 \) (the null hypothesis) is wrong. How likely is that to happen? This is the power of the test:
+
+- In R, the function is: `power.t.test`.
+- The argument delta in this function is the difference between null and true mean.
+- We also need a sample size. Let's consider various sample sizes and their effect on power.
+- We will examine the relationship between power and sample sizes for different mean values (possible true \( \mu \) values).
+- We plot the power curves.
+
+### Complete the following steps and work on answering the related questions:
+
+1. Use Chrome or Firefox to download the following file to your computer:
+   - [R Script: Statistical Power.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_8/Statistical_Power.R)
+2. Follow the [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities). to prepare your environment.
+3. Upload the downloaded R script into the appropriate folder in your project directory.
+4. Open the R script and start running the provided code.
+5. **Required R code modification**:
+   - In **line 44**, you need to insert your last name in the title of the plot. Make the change to this line and upload your plot using this assignment page.
+   ```{r, eval=FALSE}
+   # Plot the power curve for different true mean values as n sample size increases
+   power.curve = ggplot(my_data, aes(x = n, y = power, colour = mean)) +
+     geom_point() + geom_line() +
+     geom_hline(yintercept = 1, linetype="dashed") + 
+     xlab("sample size") +
+     # Make a change to the main (title) of the plot by adding your last name to it
+     ggtitle('Relationship Between Power and Sample Sizes for Different Mean Value Constructed by You') +
+     theme(plot.title=element_text(hjust=0.5))
+   power.curve
+   ```
+
+---
+
+## Related Questions
+
+Based on your R analysis (using your R outputs), answer the following related question:
+
+- Refer to the plot of power curves. What do you observe?
+
+---
+
+## Required R Output for Submission
+
+Using this assignment page, upload your plot of power curves. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.

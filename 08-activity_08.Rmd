@@ -1,0 +1,72 @@
+---
+output: bookdown::gitbook
+---
+# Activity 8 - Comparing Groups
+
+## Tutorial Objective
+
+The objective of this week's module is to equip you with the following:
+- Comparing groups
+- Use R/RStudio in a desktop/laptop environment to test relationships between a quantitative variable and a categorical variable.
+
+---
+
+## Pre-Task Tutorial Activity
+
+### Context of the Problem
+
+Every year, the US releases to the public a large data set containing information on births recorded in the country. This data set has been of interest to medical researchers who are studying the relation between habits and practices of expectant mothers and the birth of their children. We will work with a random sample of 1,000 cases from the data set released in 2014.
+
+We would like to know: is there convincing evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who do not smoke? We will use data from this sample to try to answer this question.
+
+---
+
+### Activity Instructions
+
+Complete the following steps and work on answering the related question:
+
+1. **Download the R script**:
+   - Download the following R script to your computer:  
+     - [babies.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_9/babies.R)
+
+2. **Set up your R environment**:
+   - Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  
+     [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities).
+
+3. **Upload the R script**:
+   - Copy the downloaded R script into the `Module 9` folder inside your project directory.
+
+4. **Run the R script**:
+   - Open the R script in RStudio and start running the provided codes.
+
+5. **Modify the R code**:
+   - In **line 33**, you need to insert your last name in the title of the plot. Make the change to this line and save your updated plot.
+   ```{r, eval=FALSE}
+   # Construct a side-by-side boxplots of weights of babies by mothers' smoking habit.
+   # Give an appropriate title and x-y labels (modify the code below).
+   box.plot <- ggplot(babies, aes(x = habit, y = weight, fill = habit)) 
+   box.plot <- box.plot + geom_boxplot()
+   box.plot <- box.plot + scale_fill_manual(values = c("lightgrey", "darkorange"), 
+                                            name = "Habit")
+   box.plot <- box.plot + labs(x = "Mothers' Smoking Habit", 
+                               y = "Babies' Weights")
+   # Center and add a title to the side-by-side boxplots.
+   box.plot <- box.plot + ggtitle("Boxplots Constructed by You") # LINE 33
+   box.plot <- box.plot + theme_update(plot.title = element_text(hjust = 0.5))
+   box.plot
+   ```
+
+---
+
+## Related Questions
+
+Based on your R analysis (using your R outputs), answer the following related questions:
+
+1. Set up appropriate hypotheses to evaluate whether there is a relationship between a mother smoking and average birth weight.
+2. State the null and alternative hypotheses, the value for the observed test statistic, the reference distribution, the p-value, and the conclusion using plain English.
+
+---
+
+## Required R Output for Submission
+
+Using this assignment page, upload your side-by-side boxplots of the data. The accepted file formats for Quercus submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.

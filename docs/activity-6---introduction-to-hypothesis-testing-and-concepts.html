@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Analysis Activities</title>
+  <title>Activity 6 - Introduction to Hypothesis Testing and Concepts | Data Analysis Activities</title>
   <meta name="description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Analysis Activities" />
+  <meta property="og:title" content="Activity 6 - Introduction to Hypothesis Testing and Concepts | Data Analysis Activities" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Analysis Activities" />
+  <meta name="twitter:title" content="Activity 6 - Introduction to Hypothesis Testing and Concepts | Data Analysis Activities" />
   
   <meta name="twitter:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="activity-1---exploring-categorical-data.html"/>
+<link rel="prev" href="activity-5---estimation-with-confidence-intervals.html"/>
+<link rel="next" href="activity-7---errors-in-tests-statistical-power-sample-size.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -262,38 +262,119 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Analysis Activities</h1>
-<p class="author"><em>Asal Aslemand, Jaiditya Dev, and Sinan Ma</em></p>
-<p class="date"><em>2024-12-01</em></p>
-</div>
-<div id="welcome-to-data-analysis-activities" class="section level1 hasAnchor">
-<h1>Welcome to Data Analysis Activities<a href="index.html#welcome-to-data-analysis-activities" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><img src="Chi-square.jpg" width="65%" style="display: block; margin: auto;" /></p>
-<p>This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each chapter corresponds to one statistical activity with a set of learning objectives.</p>
-<p>Click on a link below to access a specific statistical activity.</p>
+<div id="activity-6---introduction-to-hypothesis-testing-and-concepts" class="section level1 hasAnchor">
+<h1>Activity 6 - Introduction to Hypothesis Testing and Concepts<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#activity-6---introduction-to-hypothesis-testing-and-concepts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tutorial-objective-3" class="section level2 hasAnchor">
+<h2>Tutorial Objective<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#tutorial-objective-3" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The objective of this week’s module is to equip you with the following:</p>
 <ul>
-<li><a href="activity-1---exploring-categorical-data.html#activity-1---exploring-categorical-data">Activity 1: Exploring Categorical Data</a></li>
-<li><a href="activity-2---exploring-quantitative-data.html#activity-2---exploring-quantitative-data">Activity 2 - Exploring Quantitative Data</a></li>
-<li><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#activity-3---sampling-distributions-related-to-the-normal-population">Activity 3 - Sampling Distributions Related to the Normal Population</a></li>
-<li><a href="#activity-4---applications-of-limit-theorem">Activity 4 - Applications of Limit Theorem</a></li>
-<li><a href="activity-5---estimation-with-confidence-intervals.html#activity-5---estimation-with-confidence-intervals">Activity 5 - Estimation with Confidence Intervals</a></li>
-<li><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#activity-6---introduction-to-hypothesis-testing-and-concepts">Activity 6 - Introduction to Hypothesis Testing and Concepts</a></li>
-<li><a href="#activity-7---errors-in-tests-statistical-power--sample-size">Activity 7 - Errors in Tests, Statistical Power &amp; Sample Size</a></li>
-<li><a href="activity-8---comparing-groups.html#activity-8---comparing-groups">Activity 8 - Comparing Groups</a></li>
-<li><a href="activity-9---analysis-of-categorical-data.html#activity-9---analysis-of-categorical-data">Activity 9 - Analysis of Categorical Data</a></li>
+<li>Use R/RStudio on a desktop/laptop to carry out hypothesis testing and to estimate error probability via simulation.</li>
+<li>Employ hypothesis testing for:
+<ul>
+<li><strong>One Proportion</strong></li>
+<li><strong>One Mean</strong>
+<ul>
+<li>Sigma known, Normal population:
+<ul>
+<li>Large sample<br />
+</li>
+<li>Small sample<br />
+</li>
+</ul></li>
+<li>Sigma unknown, estimate sigma (replace with sample standard deviation):
+<ul>
+<li>Large sample, CLT applies<br />
+</li>
+<li>Small sample, assess (or know) whether the random sample comes from a Normal population.<br />
+</li>
+</ul></li>
+</ul></li>
+<li><strong>One Variance</strong>
+<ul>
+<li>Independent, (small or large) random sample.</li>
+</ul></li>
+</ul></li>
 </ul>
 <hr />
-<p><strong>Note:</strong> Solution to each statistical activity is shared at the instructor’s discretion.</p>
+</div>
+<div id="pre-task-tutorial-activity-2" class="section level2 hasAnchor">
+<h2>Pre-Task Tutorial Activity<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#pre-task-tutorial-activity-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="context-of-the-problem-for-carrying-out-simulations-1" class="section level3 hasAnchor">
+<h3>Context of the Problem for Carrying Out Simulations<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#context-of-the-problem-for-carrying-out-simulations-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Suppose <strong>STA123 course grades</strong> are Normally distributed with a mean of <strong>70</strong> and a standard deviation of <strong>5</strong>.</p>
+<p>Estimate the error probability in a t-test of <span class="math inline">\(H_0: \mu = 70\)</span> versus <span class="math inline">\(H_a: \mu &gt; 70\)</span>, when the underlying population is Normal with <span class="math inline">\(\mu = 70\)</span> and <span class="math inline">\(\sigma = 5\)</span>. Take a random sample of <span class="math inline">\(n = 25\)</span> and test at <span class="math inline">\(\alpha = 0.05\)</span>.</p>
+<p>Using the STA123 course grades example, we can conduct an experiment using the following steps:
+1. Generate a set of <strong>10,000</strong> STA123 course grades data with 25 students from the population.
+2. For each of the generated random samples, conduct a t-test.
+3. Store the observed t-test statistics and the p-values in a matrix.
+4. Count the number of p-values that are <span class="math inline">\(\leq 0.05\)</span> (<span class="math inline">\(\alpha\)</span>-level) to estimate the probability of error.</p>
+<hr />
+</div>
+</div>
+<div id="steps-to-complete-the-activity-1" class="section level2 hasAnchor">
+<h2>Steps to Complete the Activity<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#steps-to-complete-the-activity-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li><p>Download the following file to your computer:</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_7/Hypothesis-Testing-Error-Probability-Simulation.R">R Script: Hypothesis Testing-Error Probability-Simulation.R</a></li>
+</ul></li>
+<li><p>Follow the instructions provided on the <strong>How to Access and Use R for Data Analysis Activities</strong> page to set up your R environment:<br />
+<a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong></a>.</p></li>
+<li><p>Once you’ve set up your project folder and uploaded the file, proceed with the steps below:</p>
+<ul>
+<li>Open the R script <code>Hypothesis Testing-Error Probability-Simulation.R</code> and start running the provided code.</li>
+</ul></li>
+<li><p>There are two required R code modifications:</p>
+<ul>
+<li><strong>Line 10</strong>: You need to input a seed number. You are provided with a unique seed number that you can retrieve from Quercus in your Grade page (see <a href="#">Seed Number</a>). Find your seed number and put it into line 10 and run the line of code in R.</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb7-1" tabindex="-1"></a><span class="co"># R code modification #1: </span></span>
+<span id="cb7-2"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb7-2" tabindex="-1"></a><span class="co"># Enter your seed number inside the function set.seed( ) </span></span>
+<span id="cb7-3"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb7-3" tabindex="-1"></a><span class="co"># set.seed() function in R will create reproducible results.</span></span>
+<span id="cb7-4"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb7-4" tabindex="-1"></a><span class="fu">set.seed</span>()</span></code></pre></div>
+<ul>
+<li><strong>Line 75</strong>: You need to insert your last name in the title of the plot. Make the change to this line and upload your plot using this assignment page.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-1" tabindex="-1"></a><span class="co"># R code modification #2: </span></span>
+<span id="cb8-2"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-2" tabindex="-1"></a><span class="co"># Make a change to the main (title) of the plot by adding your last name to it.</span></span>
+<span id="cb8-3"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb8-4"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-4" tabindex="-1"></a>hist.plot <span class="ot">=</span> <span class="fu">ggplot</span>(<span class="at">data =</span> HT.Array) </span>
+<span id="cb8-5"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-5" tabindex="-1"></a>hist.plot <span class="ot">=</span> hist.plot <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> t.Stat,</span>
+<span id="cb8-6"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-6" tabindex="-1"></a>                                           <span class="at">y =</span> <span class="fu">after_stat</span>(count <span class="sc">/</span> <span class="fu">sum</span>(count)),</span>
+<span id="cb8-7"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-7" tabindex="-1"></a>                                           <span class="at">fill =</span> P.value <span class="sc">&lt;=</span> <span class="fl">0.05</span>), </span>
+<span id="cb8-8"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-8" tabindex="-1"></a>                                       <span class="at">binwidth =</span> <span class="fl">0.5</span>, </span>
+<span id="cb8-9"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-9" tabindex="-1"></a>                                       <span class="at">color =</span> <span class="st">&#39;black&#39;</span>)</span>
+<span id="cb8-10"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-10" tabindex="-1"></a>hist.plot <span class="ot">=</span> hist.plot <span class="sc">+</span> <span class="fu">scale_fill_manual</span>(<span class="at">values=</span><span class="fu">c</span>(<span class="st">&quot;lightgrey&quot;</span>, <span class="st">&quot;darkorange&quot;</span>), </span>
+<span id="cb8-11"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-11" tabindex="-1"></a>                                          <span class="at">name=</span><span class="st">&quot;P.values &lt;= 0.05&quot;</span>,</span>
+<span id="cb8-12"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-12" tabindex="-1"></a>                                          <span class="at">labels=</span><span class="fu">c</span>(<span class="st">&quot;No&quot;</span>, <span class="st">&quot;Yes&quot;</span>))</span>
+<span id="cb8-13"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-13" tabindex="-1"></a>hist.plot <span class="ot">=</span> hist.plot <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;t Statistics&quot;</span>, </span>
+<span id="cb8-14"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-14" tabindex="-1"></a>                             <span class="at">y =</span> <span class="st">&quot;Proportion&quot;</span>)</span>
+<span id="cb8-15"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-15" tabindex="-1"></a>hist.plot <span class="ot">=</span> hist.plot <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&#39;Simulated t Statistics Conducted by You&#39;</span>)</span>
+<span id="cb8-16"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#cb8-16" tabindex="-1"></a>hist.plot <span class="sc">+</span> <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))</span></code></pre></div></li>
+</ol>
+<hr />
+</div>
+<div id="related-questions-5" class="section level2 hasAnchor">
+<h2>Related Questions<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#related-questions-5" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Based on your R analysis (using your R outputs), answer the following related questions:</p>
+<ol style="list-style-type: decimal">
+<li>Briefly describe the result of your simulation. What do you observe?</li>
+</ol>
+<hr />
+</div>
+<div id="required-r-output-for-submission-2" class="section level2 hasAnchor">
+<h2>Required R Output for Submission<a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#required-r-output-for-submission-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using this assignment page, upload your histogram of t-statistics based on your simulated data. The accepted file formats for Quercus submission are <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> files.</p>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="activity-1---exploring-categorical-data.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity-5---estimation-with-confidence-intervals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="activity-7---errors-in-tests-statistical-power-sample-size.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

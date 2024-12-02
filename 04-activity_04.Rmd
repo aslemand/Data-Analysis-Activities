@@ -1,0 +1,68 @@
+---
+output: bookdown::gitbook
+---
+# Activity 4 - Applications of Limit Theorems
+
+## Tutorial Objective
+
+The objective of this week's module is to equip you with the following:
+- Use R/RStudio on a desktop/laptop to construct sampling distribution of the sample mean. 
+- Explore the concept of central limit theorem
+- Apply the Normal Approx. to the Binomial
+
+## Pre-Task Tutorial Activity
+
+The General Social Survey (GSS, 2013) reports the total number of groups, organizations, and associations that individuals, persons 12 years of age and older in Canada, participated in during the past 12 months. A researcher took a random sample of 100 persons 12 years of age and older from this population. She asked the randomly selected persons to indicate the total number of groups, organizations, and associations that they participated in during the past 12 months. She stored her data in a CSV file and named the variable of interest “group”.
+
+Complete the following steps and work on answering the related questions:
+
+1. Download the following two files to your computer:
+   - Data File: [Volunteering.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_4/Volunteering.csv)
+   - R Script: [Volunteering.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_4/Volunteering.R)
+
+2. Follow the instructions provided on the **How to Access and Use R for Data Analysis Activities** page to set up your R environment:  
+   [**How to Access and Use R for Data Analysis Activities**](#how-to-set-up-r-for-data-analysis-activities).
+
+3. Once you’ve set up your project folder and uploaded the files, proceed with the steps below:
+
+   - Open the R script `Volunteering.R` and start running the provided codes.
+
+4. There are two required R code modifications:
+   - **Lines 26 to 30** require you to input a seed number into line 30. You are provided with a unique seed number that you can retrieve from Quercus in your Grade page (see [Seed Number](#)). Find your seed number and put it into line 30 and run the line of code in R.
+   ```{r, eval = FALSE}
+   # R code modification #1: Obtain sampling Distribution of Sample Means
+   # Pick a seed number so that each time you run your sampling,
+   # you will obtain the same result.
+   # Enter your seed number in line 30.
+   set.seed( ) # Enter your seed number here
+   ```
+   - **Lines 40 to 45** in the R script describe a small exercise to make a change to line 43. You will insert your last name in the title of the plot. Make the change to the line mentioned and upload your plot using this assignment page.
+   ```{r, eval = FALSE}
+    # R code modification #2: Plot the Sampling Distribution of Sample Means for Total Number of Group Participation
+    # Make a change to line 43. Include your last name in the main (title) argument.
+      hist(Xbar, 
+         main = "Histogram of Sample Means \n Conducted by You", 
+         xlab = "Xbar: Sample Means for Total Number of Group Participation", 
+         col = "lavender")
+
+   ```
+
+---
+
+## Related Questions
+
+Based on your R analysis (using your R outputs), answer the following related questions:
+
+1. Refer to the plots of data (boxplot and Normal QQ plot). Does it appear that this data could have come from a normal distribution? Use **both** plots to justify your answer.
+
+2. Refer to the summary statistics of the data. Write a sentence that extrapolates the **IQR** for this sample into a statement about the population – be careful with your wording.
+
+3. Use the sample mean and sample standard deviation of the total number of group participation as the parameter values for the population mean and population standard deviation. If the population distribution of the total number of group participation was normal, 20% of all cases in the specified age range participated in at least how many group organizations? Find \(x\).
+
+4. For this question, treat the “group” data as a population data (\(N = 100\)). Note the mean as the population mean and SD as the population SD. Draw 60 samples of size \(n = 50\) each from this supposed population distribution to approximate the sampling distribution of sample means total number of group participation. Store the result of your experiment in a variable named `Xbar`. Construct a frequency histogram and obtain summary statistics for the sampling distribution of sample means total number of group participation. Describe the shape, center, and spread of the sampling distribution of sample means total number of group participation for 50 persons in the specified age group. Name the theorem that you use to answer this question.
+
+---
+
+## Required R Output for Submission
+
+Using this assignment page, upload your histogram for the sampling distribution of sample means total number of group participation. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.
