@@ -297,8 +297,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><p><strong>Download the required files</strong>:</p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain-OECD2017.csv">Data file: EduAttain-OECD2017.csv</a></li>
-<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain.R">R Script: EduAttain.R</a></li>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain-OECD2017.csv">Data file: EduAttain-OECD2017.csv</a></li>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain.R">R Script: EduAttain.R</a></li>
 </ul></li>
 <li><p><strong>Set up your R environment</strong>:
 Follow the instructions provided on the <a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong> page</a> to set up your R environment.</p></li>
@@ -315,17 +315,17 @@ Follow the instructions provided on the <a href="how-to-set-up-r-for-data-analys
 <ul>
 <li>In <strong>line 15</strong>, make a change to include your last name on the scatterplot of the data. Bring the result of your R output to your tutorial.</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-1" tabindex="-1"></a><span class="co"># Obtain the scatterplot of the data</span></span>
-<span id="cb1-2"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-2" tabindex="-1"></a><span class="co"># Load the library ggplot</span></span>
-<span id="cb1-3"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-4"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-4" tabindex="-1"></a>Plot <span class="ot">=</span> <span class="fu">ggplot</span>(EduAttain, <span class="fu">aes</span>(<span class="at">x=</span>Females_Edu, <span class="at">y=</span>Males_Edu))</span>
-<span id="cb1-5"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-5" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">19</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)</span>
-<span id="cb1-6"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-6" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Percent Females Educational Attaintment&quot;</span>) </span>
-<span id="cb1-7"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-7" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Percent Males Educational Attaintment&quot;</span>)</span>
-<span id="cb1-8"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-8" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&quot;Scatterplot of Males vs Females Educational Attainment&quot;</span>, </span>
-<span id="cb1-9"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-9" tabindex="-1"></a>                      <span class="at">subtitle =</span> <span class="st">&quot;Constructed by You&quot;</span>)</span>
-<span id="cb1-10"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-10" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>), </span>
-<span id="cb1-11"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-11" tabindex="-1"></a>                    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))  </span></code></pre></div></li>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-1" tabindex="-1"></a><span class="co"># Obtain the scatterplot of the data</span></span>
+<span id="cb12-2"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-2" tabindex="-1"></a><span class="co"># Load the library ggplot</span></span>
+<span id="cb12-3"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb12-4"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-4" tabindex="-1"></a>Plot <span class="ot">=</span> <span class="fu">ggplot</span>(EduAttain, <span class="fu">aes</span>(<span class="at">x=</span>Females_Edu, <span class="at">y=</span>Males_Edu))</span>
+<span id="cb12-5"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-5" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">19</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb12-6"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-6" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Percent Females Educational Attaintment&quot;</span>) </span>
+<span id="cb12-7"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-7" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Percent Males Educational Attaintment&quot;</span>)</span>
+<span id="cb12-8"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-8" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&quot;Scatterplot of Males vs Females Educational Attainment&quot;</span>, </span>
+<span id="cb12-9"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-9" tabindex="-1"></a>                      <span class="at">subtitle =</span> <span class="st">&quot;Constructed by You&quot;</span>)</span>
+<span id="cb12-10"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-10" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>), </span>
+<span id="cb12-11"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb12-11" tabindex="-1"></a>                    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))  </span></code></pre></div></li>
 </ol>
 <hr />
 </div>

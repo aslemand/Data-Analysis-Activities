@@ -30,8 +30,8 @@ You will analyze the relationship between males’ and females’ percentage of 
 ## Complete the following steps and work on answering the related questions:
 
 1. **Download the required files**:
-   - [Data file: EduAttain-OECD2017.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain-OECD2017.csv)
-   - [R Script: EduAttain.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain.R)
+   - [Data file: EduAttain-OECD2017.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain-OECD2017.csv)
+   - [R Script: EduAttain.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain.R)
 
 2. **Set up your R environment**:
    Follow the instructions provided on the [**How to Access and Use R for Data Analysis Activities** page](#how-to-set-up-r-for-data-analysis-activities) to set up your R environment.
