@@ -5,7 +5,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 - Comparing groups
 - Use R/RStudio in a desktop/laptop environment to test relationships between a quantitative variable and a categorical variable.
 

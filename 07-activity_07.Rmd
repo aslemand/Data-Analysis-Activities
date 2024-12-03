@@ -5,7 +5,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 - Obtain statistical power.
 - Use statistical power to find sample sizes.
 - Use R/RStudio on a desktop/laptop to explore the relationship between statistical power and sample sizes for different mean values.

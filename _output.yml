@@ -7,5 +7,12 @@ bookdown::gitbook:
         <li><a href="https://github.com/aslemand/Data-Analysis-Activities" target="blank">Published with bookdown</a></li>
     # Disable all sharing options
     sharing: false
-    # Do not show the download button
-    download: []
+    # Enable the download button for PDF
+    download: ["pdf"]
+
+bookdown::pdf_book:
+  toc: true               # Include a table of contents
+  number_sections: true   # Number sections
+  fig_caption: true       # Enable figure captions
+  keep_tex: true          # Keep the intermediate .tex file
+  latex_engine: xelatex   # Use XeLaTeX (recommended for better font handling)

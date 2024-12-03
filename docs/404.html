@@ -54,6 +54,70 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <style type="text/css">
   
@@ -76,6 +140,7 @@
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome to Data Analysis Activities</a></li>
 <li class="chapter" data-level="" data-path="activity-1---exploring-categorical-data.html"><a href="activity-1---exploring-categorical-data.html"><i class="fa fa-check"></i>Activity 1 - Exploring Categorical Data</a>
 <ul>
+<li class="chapter" data-level="" data-path="activity-1---exploring-categorical-data.html"><a href="activity-1---exploring-categorical-data.html#tutorial-objective"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-1---exploring-categorical-data.html"><a href="activity-1---exploring-categorical-data.html#context-of-data"><i class="fa fa-check"></i>Context of Data</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-1---exploring-categorical-data.html"><a href="activity-1---exploring-categorical-data.html#education-level"><i class="fa fa-check"></i>Education Level</a></li>
@@ -88,6 +153,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-2---exploring-quantitative-data.html"><a href="activity-2---exploring-quantitative-data.html"><i class="fa fa-check"></i>Activity 2 - Exploring Quantitative Data</a>
 <ul>
+<li class="chapter" data-level="" data-path="activity-2---exploring-quantitative-data.html"><a href="activity-2---exploring-quantitative-data.html#tutorial-objective-1"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-2---exploring-quantitative-data.html"><a href="activity-2---exploring-quantitative-data.html#context-of-data-1"><i class="fa fa-check"></i>Context of Data</a></li>
 <li class="chapter" data-level="" data-path="activity-2---exploring-quantitative-data.html"><a href="activity-2---exploring-quantitative-data.html#r-setup-1"><i class="fa fa-check"></i>R Setup</a></li>
 <li class="chapter" data-level="" data-path="activity-2---exploring-quantitative-data.html"><a href="activity-2---exploring-quantitative-data.html#activity-instructions-1"><i class="fa fa-check"></i>Activity Instructions</a></li>
@@ -96,7 +162,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html"><i class="fa fa-check"></i>Activity 3 - Sampling Distributions Related to the Normal Population</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#tutorial-objective"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#tutorial-objective-2"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#context-of-data-2"><i class="fa fa-check"></i>Context of Data</a></li>
 <li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#r-setup-2"><i class="fa fa-check"></i>R Setup</a></li>
 <li class="chapter" data-level="" data-path="activity-3---sampling-distributions-related-to-the-normal-population.html"><a href="activity-3---sampling-distributions-related-to-the-normal-population.html#activity-instructions-2"><i class="fa fa-check"></i>Activity Instructions</a></li>
@@ -105,14 +171,14 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html"><i class="fa fa-check"></i>Activity 4 - Applications of Limit Theorems</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html#tutorial-objective-1"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html#tutorial-objective-3"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html#pre-task-tutorial-activity"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a></li>
 <li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html#related-questions-3"><i class="fa fa-check"></i>Related Questions</a></li>
 <li class="chapter" data-level="" data-path="activity-4---applications-of-limit-theorems.html"><a href="activity-4---applications-of-limit-theorems.html#required-r-output-for-submission"><i class="fa fa-check"></i>Required R Output for Submission</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-5---estimation-with-confidence-intervals.html"><a href="activity-5---estimation-with-confidence-intervals.html"><i class="fa fa-check"></i>Activity 5 - Estimation with Confidence Intervals</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-5---estimation-with-confidence-intervals.html"><a href="activity-5---estimation-with-confidence-intervals.html#tutorial-objective-2"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-5---estimation-with-confidence-intervals.html"><a href="activity-5---estimation-with-confidence-intervals.html#tutorial-objective-4"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-5---estimation-with-confidence-intervals.html"><a href="activity-5---estimation-with-confidence-intervals.html#pre-task-tutorial-activity-1"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-5---estimation-with-confidence-intervals.html"><a href="activity-5---estimation-with-confidence-intervals.html#context-of-the-problem-for-carrying-out-simulations"><i class="fa fa-check"></i>Context of the Problem for Carrying Out Simulations</a></li>
@@ -123,7 +189,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><i class="fa fa-check"></i>Activity 6 - Introduction to Hypothesis Testing and Concepts</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#tutorial-objective-3"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#tutorial-objective-5"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#pre-task-tutorial-activity-2"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-6---introduction-to-hypothesis-testing-and-concepts.html"><a href="activity-6---introduction-to-hypothesis-testing-and-concepts.html#context-of-the-problem-for-carrying-out-simulations-1"><i class="fa fa-check"></i>Context of the Problem for Carrying Out Simulations</a></li>
@@ -134,7 +200,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-7---errors-in-tests-statistical-power-sample-size.html"><a href="activity-7---errors-in-tests-statistical-power-sample-size.html"><i class="fa fa-check"></i>Activity 7 - Errors in Tests, Statistical Power &amp; Sample Size</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-7---errors-in-tests-statistical-power-sample-size.html"><a href="activity-7---errors-in-tests-statistical-power-sample-size.html#tutorial-objective-4"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-7---errors-in-tests-statistical-power-sample-size.html"><a href="activity-7---errors-in-tests-statistical-power-sample-size.html#tutorial-objective-6"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-7---errors-in-tests-statistical-power-sample-size.html"><a href="activity-7---errors-in-tests-statistical-power-sample-size.html#pre-task-tutorial-activity-3"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-7---errors-in-tests-statistical-power-sample-size.html"><a href="activity-7---errors-in-tests-statistical-power-sample-size.html#context-of-the-problem"><i class="fa fa-check"></i>Context of the Problem</a></li>
@@ -145,7 +211,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-8---comparing-groups.html"><a href="activity-8---comparing-groups.html"><i class="fa fa-check"></i>Activity 8 - Comparing Groups</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-8---comparing-groups.html"><a href="activity-8---comparing-groups.html#tutorial-objective-5"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-8---comparing-groups.html"><a href="activity-8---comparing-groups.html#tutorial-objective-7"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-8---comparing-groups.html"><a href="activity-8---comparing-groups.html#pre-task-tutorial-activity-4"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-8---comparing-groups.html"><a href="activity-8---comparing-groups.html#context-of-the-problem-1"><i class="fa fa-check"></i>Context of the Problem</a></li>
@@ -156,7 +222,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-9---analysis-of-categorical-data.html"><a href="activity-9---analysis-of-categorical-data.html"><i class="fa fa-check"></i>Activity 9 - Analysis of Categorical Data</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-9---analysis-of-categorical-data.html"><a href="activity-9---analysis-of-categorical-data.html#tutorial-objective-6"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-9---analysis-of-categorical-data.html"><a href="activity-9---analysis-of-categorical-data.html#tutorial-objective-8"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-9---analysis-of-categorical-data.html"><a href="activity-9---analysis-of-categorical-data.html#pre-task-tutorial-activity-5"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a>
 <ul>
 <li class="chapter" data-level="" data-path="activity-9---analysis-of-categorical-data.html"><a href="activity-9---analysis-of-categorical-data.html#instructions"><i class="fa fa-check"></i>Instructions</a></li>
@@ -170,7 +236,7 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><i class="fa fa-check"></i>Activity 10 - Correlation and Introduction to Simple Linear Regression Model</a>
 <ul>
-<li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#tutorial-objective-7"><i class="fa fa-check"></i>Tutorial Objective</a></li>
+<li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#tutorial-objective-9"><i class="fa fa-check"></i>Tutorial Objective</a></li>
 <li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#pre-task-tutorial-activity-6"><i class="fa fa-check"></i>Pre-Task Tutorial Activity</a></li>
 <li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#complete-the-following-steps-and-work-on-answering-the-related-questions-1"><i class="fa fa-check"></i>Complete the following steps and work on answering the related questions:</a></li>
 <li class="chapter" data-level="" data-path="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#based-on-your-data-analysis-using-your-r-outputs-answer-the-following-related-questions"><i class="fa fa-check"></i>Based on your data analysis (using your R outputs), answer the following related questions:</a></li>
@@ -250,7 +316,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": {},
+"download": ["_main.pdf"],
 "search": {
 "engine": "fuse",
 "options": null
@@ -262,6 +328,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

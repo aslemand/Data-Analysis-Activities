@@ -5,7 +5,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 
 - Conduct Goodness of Fit Test for Analysis of One-way Table
 - Conduct Chi-Square Test of Independence for Analysis of Two-way Table (Association Between Two Categorical Variables)

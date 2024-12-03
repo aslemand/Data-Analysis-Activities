@@ -5,7 +5,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 
 - Use R/RStudio on a desktop/laptop to carry out hypothesis testing and to estimate error probability via simulation.
 - Employ hypothesis testing for:

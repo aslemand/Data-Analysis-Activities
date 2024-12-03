@@ -3,6 +3,14 @@ output: bookdown::gitbook
 ---
 # Activity 1 - Exploring Categorical Data
 
+## Tutorial Objective
+
+The objective of this module is to equip you with the following:
+
+- Use R/RStudio on a desktop/laptop to simulate confidence intervals for population parameters of interest.
+- Construct plots and frequency tables for describing categorical data
+- Assess association between variables
+
 ## Context of Data
 
 The [**Survey of Consumer Finances** (SCF, 2013)](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=3502) took a random sample of 6,015 adult Canadians and collected information on their level of education and whether or not they own a home. The variables "Education Level" and "Home Ownership" are measured as follows:

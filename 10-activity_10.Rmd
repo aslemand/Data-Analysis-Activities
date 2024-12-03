@@ -6,7 +6,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 - Describe the nature of the relationship between two quantitative variables using a scatterplot of the data.
 - Interpret the correlation coefficient estimate within the context of the data.
 - Fit a simple linear regression model to data.

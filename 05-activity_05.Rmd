@@ -5,7 +5,7 @@ output: bookdown::gitbook
 
 ## Tutorial Objective
 
-The objective of this week's module is to equip you with the following:
+The objective of this module is to equip you with the following:
 - Use R/RStudio on a desktop/laptop to simulate confidence intervals for population parameters of interest.
 - Construct a confidence interval for one mean (known sigma) from a Normal Population.
 - Construct a confidence interval for one mean (unknown sigma, small sample) from a Normal Population.

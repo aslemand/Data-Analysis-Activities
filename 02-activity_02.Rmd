@@ -3,6 +3,14 @@ output: bookdown::gitbook
 ---
 # Activity 2 - Exploring Quantitative Data
 
+## Tutorial Objective
+
+The objective of this module is to equip you with the following:
+
+- Use R/RStudio on a desktop/laptop to simulate confidence intervals for population parameters of interest.
+- Construct plots, frequency tables, and summary statistics for describing quantitative data.
+- Assess association between a quantitative and a categorical variable.
+
 ## Context of Data
 
 The [**Organisation of Economic Cooperation and Development (OECD)**](http://www.oecd.org/about/) gathers various information regarding OECD countries and its partners to promote policies that aim to improve the economic and social well-being of people around the world. From the **Better Life Index (BLI, 2021)**, a program conducted by OECD, you will analyze a quantitative variable named **Social Network Support**. This variable reflects the percentage of males and females aged 15 years and over in 41 OECD countries who perceive their social network as having relatives or friends that they can count on to help them in times of need and trouble.
