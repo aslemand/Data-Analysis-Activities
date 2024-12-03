@@ -17,15 +17,3 @@ rmd_files:
   - 10-activity_10.Rmd
   - r_instructions.Rmd
 number_sections: true    # Enable numbering globally
-
-bookdown::gitbook:
-  css: style.css
-  config:
-    toc:
-      before: |
-      after: |
-        <li><a href="https://github.com/aslemand/Data-Analysis-Activities" target="blank">Published with bookdown</a></li>
-    # Disable all sharing options
-    sharing: false
-    # Enable the download button for PDF with a direct link
-    download: ["pdf"]

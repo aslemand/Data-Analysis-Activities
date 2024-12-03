@@ -1,0 +1,85 @@
+---
+output: bookdown::gitbook
+---
+
+# Activity 10 - Correlation and Introduction to Simple Linear Regression Model
+
+## Tutorial Objective
+
+The objective of this week's module is to equip you with the following:
+- Describe the nature of the relationship between two quantitative variables using a scatterplot of the data.
+- Interpret the correlation coefficient estimate within the context of the data.
+- Fit a simple linear regression model to data.
+- Describe what the regression line indicates.
+- Interpret the estimated regression coefficients within the context of the data.
+- Check the necessary assumptions about the random errors for the regression model.
+- Describe the proportion of variation in the response variable accounted for by the regression model.
+- Test whether there is a significant relationship between the variables in the data.
+- Analyze relationships between quantitative variables using R (local setup instructions can be found on the [**How to Access and Use R for Data Analysis Activities** page](#how-to-set-up-r-for-data-analysis-activities)).
+
+---
+
+## Pre-Task Tutorial Activity
+
+The Organisation of Economic Cooperation and Development ([OECD](http://www.oecd.org/about/)) gathers various information regarding OECD countries and its partners to promote policies that improve the economic and social well-being of people around the world. The “Better Life Index” (BLI, 2017), a program conducted by OECD, includes information about Educational Attainment. This variable refers to the percentage of adults aged 25 to 64 holding at least an upper secondary degree over the same age as defined by ISCED Classification (International Standard Classification of Education).
+
+You will analyze the relationship between males’ and females’ percentage of educational attainment.
+
+---
+
+## Complete the following steps and work on answering the related questions:
+
+1. **Download the required files**:
+   - [Data file: EduAttain-OECD2017.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain-OECD2017.csv)
+   - [R Script: EduAttain.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain.R)
+
+2. **Set up your R environment**:
+   Follow the instructions provided on the [**How to Access and Use R for Data Analysis Activities** page](#how-to-set-up-r-for-data-analysis-activities) to set up your R environment.
+
+3. **Run the R script**:
+   - Open the `EduAttain.R` script in your R project folder.
+   - Execute each line of code sequentially.
+
+4. **Copy and save results**:
+   - Copy each result/R output that appears in the R console to a Word document or similar. Optionally, save the results in an R Markdown file.
+
+5. **Modify the R script**:
+   - In **line 15**, make a change to include your last name on the scatterplot of the data. Bring the result of your R output to your tutorial.
+   ```{r, eval=FALSE}
+   # Obtain the scatterplot of the data
+   # Load the library ggplot
+   library(ggplot2)
+   Plot = ggplot(EduAttain, aes(x=Females_Edu, y=Males_Edu))
+   Plot = Plot + geom_point(shape=19, color="blue")
+   Plot = Plot + xlab("Percent Females Educational Attaintment") 
+   Plot = Plot + ylab("Percent Males Educational Attaintment")
+   Plot = Plot + ggtitle("Scatterplot of Males vs Females Educational Attainment", 
+                         subtitle = "Constructed by You")
+   Plot = Plot + theme(plot.title=element_text(hjust=0.5), 
+                       plot.subtitle = element_text(hjust=0.5))  
+   ```
+
+---
+
+## Based on your data analysis (using your R outputs), answer the following related questions:
+
+1. Refer to the scatterplot of the data. Describe the nature of the relationship between the percentage of males' and females' educational attainment in OECD countries.
+2. What is the estimated correlation coefficient? Interpret this number in this context.
+3. What does the regression line tell us?
+4. Give the least-squares prediction equation (the equation of the regression line).
+5. Interpret the estimated slope in the regression equation in this context.
+6. Interpret the estimated \(y\)-intercept in the regression equation in this context.
+7. What is the predicted value for the percentage of males’ educational attainment when females’ educational attainment is 80%?
+8. For the United Kingdom, the percentage of educational attainment for males is 81%, and for females is 80%. What is the residual for this observation?
+9. What is the residual standard error of the regression model?
+10. What is the estimated standard deviation of males’ educational attainment \(y\) for any fixed value of females’ educational attainment \(x\)?
+11. Confirm that this data has no regression outlier.
+12. State and check the necessary assumptions about the random errors in the regression model.
+13. What percentage of variation in males’ educational attainment is accounted for by the regression model?
+14. Test whether there is a significant relationship between males' and females' percentages of educational attainment. In your answer, be sure to state the null and alternative hypotheses, the value for the observed test statistic, the reference distribution, the \(p\)-value, and, if possible, the directional conclusion using plain English.
+
+---
+
+## Required R Output for Submission
+
+Using this assignment page, upload your scatterplot of the data with a histogram of each variable in the data added to its margins. The accepted file formats for Quercus submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.
