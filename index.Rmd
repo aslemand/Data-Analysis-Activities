@@ -30,6 +30,7 @@ Click on a link below to access a specific statistical activity.
 - [Activity 7 - Errors in Tests, Statistical Power & Sample Size](#activity-7---errors-in-tests-statistical-power--sample-size)
 - [Activity 8 - Comparing Groups](#activity-8---comparing-groups)
 - [Activity 9 - Analysis of Categorical Data](#activity-9---analysis-of-categorical-data)
+- [Activity 10 - Correlation and Introduction to Simple Linear Regression Model](#activity-10---correlation-and-introduction-to-simple-linear-regression-model)
 
 ---
 

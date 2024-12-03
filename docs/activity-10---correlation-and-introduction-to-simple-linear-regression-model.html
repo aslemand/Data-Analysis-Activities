@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Activity 1 - Exploring Categorical Data | Data Analysis Activities</title>
+  <title>Activity 10 - Correlation and Introduction to Simple Linear Regression Model | Data Analysis Activities</title>
   <meta name="description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Activity 1 - Exploring Categorical Data | Data Analysis Activities" />
+  <meta property="og:title" content="Activity 10 - Correlation and Introduction to Simple Linear Regression Model | Data Analysis Activities" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Activity 1 - Exploring Categorical Data | Data Analysis Activities" />
+  <meta name="twitter:title" content="Activity 10 - Correlation and Introduction to Simple Linear Regression Model | Data Analysis Activities" />
   
   <meta name="twitter:description" content="This book contains a variety of statistical activities using real-life data sets. It is intended for developing statistical reasoning at an introductory to an intermediate level by explaining patterns in the data, interpreting and communicating results within the context of data, and making data-based arguments and inference. Each activity aligns with a set of statistical learning objective." />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="activity-2---exploring-quantitative-data.html"/>
+<link rel="prev" href="activity-9---analysis-of-categorical-data.html"/>
+<link rel="next" href="how-to-set-up-r-for-data-analysis-activities.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -270,103 +270,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="activity-1---exploring-categorical-data" class="section level1 hasAnchor">
-<h1>Activity 1 - Exploring Categorical Data<a href="activity-1---exploring-categorical-data.html#activity-1---exploring-categorical-data" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="context-of-data" class="section level2 hasAnchor">
-<h2>Context of Data<a href="activity-1---exploring-categorical-data.html#context-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The <a href="https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&amp;SDDS=3502"><strong>Survey of Consumer Finances</strong> (SCF, 2013)</a> took a random sample of 6,015 adult Canadians and collected information on their level of education and whether or not they own a home. The variables “Education Level” and “Home Ownership” are measured as follows:</p>
-<div id="education-level" class="section level3 hasAnchor">
-<h3>Education Level<a href="activity-1---exploring-categorical-data.html#education-level" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="margin-left: 20px;">
-<li>
-No High School Diploma
-</li>
-<li>
-High School Diploma or GED
-</li>
-<li>
-Some College
-</li>
-<li>
-College Degree
-</li>
-</ol>
-</div>
-<div id="home-ownership" class="section level3 hasAnchor">
-<h3>Home Ownership<a href="activity-1---exploring-categorical-data.html#home-ownership" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<ol style="margin-left: 20px;">
-<li>
-Yes (Owns House/Condo/Ranch/Farm/Mobile Home/etc.)
-</li>
-<li>
-No (Otherwise)
-</li>
-</ol>
+<div id="activity-10---correlation-and-introduction-to-simple-linear-regression-model" class="section level1 hasAnchor">
+<h1>Activity 10 - Correlation and Introduction to Simple Linear Regression Model<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#activity-10---correlation-and-introduction-to-simple-linear-regression-model" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="tutorial-objective-7" class="section level2 hasAnchor">
+<h2>Tutorial Objective<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#tutorial-objective-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The objective of this week’s module is to equip you with the following:
+- Describe the nature of the relationship between two quantitative variables using a scatterplot of the data.
+- Interpret the correlation coefficient estimate within the context of the data.
+- Fit a simple linear regression model to data.
+- Describe what the regression line indicates.
+- Interpret the estimated regression coefficients within the context of the data.
+- Check the necessary assumptions about the random errors for the regression model.
+- Describe the proportion of variation in the response variable accounted for by the regression model.
+- Test whether there is a significant relationship between the variables in the data.
+- Analyze relationships between quantitative variables using R (local setup instructions can be found on the <a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong> page</a>).</p>
 <hr />
 </div>
-</div>
-<div id="r-setup" class="section level2 hasAnchor">
-<h2>R Setup<a href="activity-1---exploring-categorical-data.html#r-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>To set up and use R for this activity, follow the general instructions provided here:<br />
-<a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong></a>.</p>
-<p>Once you’ve set up your project and loaded the provided files, proceed with the activity-specific instructions below.</p>
+<div id="pre-task-tutorial-activity-6" class="section level2 hasAnchor">
+<h2>Pre-Task Tutorial Activity<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#pre-task-tutorial-activity-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The Organisation of Economic Cooperation and Development (<a href="http://www.oecd.org/about/">OECD</a>) gathers various information regarding OECD countries and its partners to promote policies that improve the economic and social well-being of people around the world. The “Better Life Index” (BLI, 2017), a program conducted by OECD, includes information about Educational Attainment. This variable refers to the percentage of adults aged 25 to 64 holding at least an upper secondary degree over the same age as defined by ISCED Classification (International Standard Classification of Education).</p>
+<p>You will analyze the relationship between males’ and females’ percentage of educational attainment.</p>
 <hr />
 </div>
-<div id="activity-instructions" class="section level2 hasAnchor">
-<h2>Activity Instructions<a href="activity-1---exploring-categorical-data.html#activity-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="complete-the-following-steps-and-work-on-answering-the-related-questions-1" class="section level2 hasAnchor">
+<h2>Complete the following steps and work on answering the related questions:<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#complete-the-following-steps-and-work-on-answering-the-related-questions-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><p>Open the R script <a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_1/Home_SCF2013.R"><code>Home_SCF2013.R</code></a> along with the data set <a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_1/Home_SCF2013.csv"><code>Home_SCF2013.csv</code></a> and run it line by line in RStudio.</p></li>
-<li><p>Examine the data using the <code>str()</code> function to understand its structure and variable names.</p></li>
-<li><p>Generate and interpret bar plots to visualize the relationship between education level and home ownership.</p></li>
-<li><p>Modify the bar plot code (lines 124 to 143) to include your last name in the title:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="activity-1---exploring-categorical-data.html#cb1-1" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="activity-1---exploring-categorical-data.html#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="activity-1---exploring-categorical-data.html#cb1-3" tabindex="-1"></a><span class="co"># Exercise.</span></span>
-<span id="cb1-4"><a href="activity-1---exploring-categorical-data.html#cb1-4" tabindex="-1"></a><span class="co"># We will construct a side-by-side (clustered) bar chart of the data</span></span>
-<span id="cb1-5"><a href="activity-1---exploring-categorical-data.html#cb1-5" tabindex="-1"></a><span class="co"># bar.plot is a name where we want to save the plot and its features</span></span>
-<span id="cb1-6"><a href="activity-1---exploring-categorical-data.html#cb1-6" tabindex="-1"></a><span class="co"># ggplot function will make a canvas, </span></span>
-<span id="cb1-7"><a href="activity-1---exploring-categorical-data.html#cb1-7" tabindex="-1"></a><span class="co"># and will make the plot ready using the data set and its variables of interest</span></span>
-<span id="cb1-8"><a href="activity-1---exploring-categorical-data.html#cb1-8" tabindex="-1"></a>bar.plot <span class="ot">=</span> <span class="fu">ggplot</span>(Home2, <span class="fu">aes</span>(<span class="at">x =</span> Education_Level, <span class="at">fill =</span> Home_Ownership))</span>
-<span id="cb1-9"><a href="activity-1---exploring-categorical-data.html#cb1-9" tabindex="-1"></a><span class="co"># We will add the bars to the plot of the data</span></span>
-<span id="cb1-10"><a href="activity-1---exploring-categorical-data.html#cb1-10" tabindex="-1"></a><span class="co"># As well, we will add the legends and position it to the right-hand side</span></span>
-<span id="cb1-11"><a href="activity-1---exploring-categorical-data.html#cb1-11" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">&quot;dodge&quot;</span>)</span>
-<span id="cb1-12"><a href="activity-1---exploring-categorical-data.html#cb1-12" tabindex="-1"></a><span class="co"># We will add a label to the x-axis, </span></span>
-<span id="cb1-13"><a href="activity-1---exploring-categorical-data.html#cb1-13" tabindex="-1"></a><span class="co"># We will differentiate the bars by filling in the levels of the response variable</span></span>
-<span id="cb1-14"><a href="activity-1---exploring-categorical-data.html#cb1-14" tabindex="-1"></a><span class="co"># We will add a title and a subtitle to the plot</span></span>
-<span id="cb1-15"><a href="activity-1---exploring-categorical-data.html#cb1-15" tabindex="-1"></a><span class="co"># And, we will centre the position of both the title and the subtitle</span></span>
-<span id="cb1-16"><a href="activity-1---exploring-categorical-data.html#cb1-16" tabindex="-1"></a><span class="co"># Modify line 140 with your last-name in the subtitle</span></span>
-<span id="cb1-17"><a href="activity-1---exploring-categorical-data.html#cb1-17" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">xlab =</span> <span class="st">&quot;Education Level&quot;</span>, <span class="at">fill =</span> <span class="st">&quot;Home Ownership&quot;</span>,</span>
-<span id="cb1-18"><a href="activity-1---exploring-categorical-data.html#cb1-18" tabindex="-1"></a>                           <span class="at">title =</span> <span class="st">&quot;Bar Plot of Home Ownership and Education Level&quot;</span>, </span>
-<span id="cb1-19"><a href="activity-1---exploring-categorical-data.html#cb1-19" tabindex="-1"></a>                           <span class="at">subtitle =</span> <span class="st">&quot;Constructed by You&quot;</span>)</span>
-<span id="cb1-20"><a href="activity-1---exploring-categorical-data.html#cb1-20" tabindex="-1"></a>bar.plot <span class="ot">=</span> bar.plot <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>), </span>
-<span id="cb1-21"><a href="activity-1---exploring-categorical-data.html#cb1-21" tabindex="-1"></a>                            <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))</span>
-<span id="cb1-22"><a href="activity-1---exploring-categorical-data.html#cb1-22" tabindex="-1"></a>bar.plot</span></code></pre></div></li>
-<li><p>Save the modified bar plot as a <code>.jpeg</code> or <code>.png</code> file.</p></li>
-</ol>
-<hr />
-</div>
-<div id="related-questions" class="section level2 hasAnchor">
-<h2>Related Questions<a href="activity-1---exploring-categorical-data.html#related-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ol style="list-style-type: decimal">
-<li><p>Suppose we are interested in investigating the relationship between <strong>home ownership</strong> and <strong>education level</strong>:</p>
+<li><p><strong>Download the required files</strong>:</p>
 <ul>
-<li>Identify the response and explanatory variable.</li>
-<li>Identify the role of each variable, their type, and their scale of measurement.</li>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain-OECD2017.csv">Data file: EduAttain-OECD2017.csv</a></li>
+<li><a href="https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_10/EduAttain.R">R Script: EduAttain.R</a></li>
 </ul></li>
-<li><p>Find the marginal proportions of the response variable, convert them to percentages, and interpret.</p></li>
-<li><p>Find the conditional proportions of the response variable for each category of the explanatory variable. Convert them to percentages and interpret.</p></li>
-<li><p>Compute the difference between the proportion of homeownership for the “No High School Diploma” group and the “College Degree” group. Interpret this difference in context.</p></li>
-<li><p>Compute the ratio between the proportion of homeownership for the “No High School Diploma” group and the “College Degree” group. Interpret this ratio in context.</p></li>
-<li><p>Using data-based arguments (i.e., comparing conditional proportions), describe the relationship between the variables <strong>“home ownership”</strong> and <strong>“education level”</strong>.</p></li>
+<li><p><strong>Set up your R environment</strong>:
+Follow the instructions provided on the <a href="how-to-set-up-r-for-data-analysis-activities.html#how-to-set-up-r-for-data-analysis-activities"><strong>How to Access and Use R for Data Analysis Activities</strong> page</a> to set up your R environment.</p></li>
+<li><p><strong>Run the R script</strong>:</p>
+<ul>
+<li>Open the <code>EduAttain.R</code> script in your R project folder.</li>
+<li>Execute each line of code sequentially.</li>
+</ul></li>
+<li><p><strong>Copy and save results</strong>:</p>
+<ul>
+<li>Copy each result/R output that appears in the R console to a Word document or similar. Optionally, save the results in an R Markdown file.</li>
+</ul></li>
+<li><p><strong>Modify the R script</strong>:</p>
+<ul>
+<li>In <strong>line 15</strong>, make a change to include your last name on the scatterplot of the data. Bring the result of your R output to your tutorial.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-1" tabindex="-1"></a><span class="co"># Obtain the scatterplot of the data</span></span>
+<span id="cb1-2"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-2" tabindex="-1"></a><span class="co"># Load the library ggplot</span></span>
+<span id="cb1-3"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-3" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-4"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-4" tabindex="-1"></a>Plot <span class="ot">=</span> <span class="fu">ggplot</span>(EduAttain, <span class="fu">aes</span>(<span class="at">x=</span>Females_Edu, <span class="at">y=</span>Males_Edu))</span>
+<span id="cb1-5"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-5" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">shape=</span><span class="dv">19</span>, <span class="at">color=</span><span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb1-6"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-6" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">&quot;Percent Females Educational Attaintment&quot;</span>) </span>
+<span id="cb1-7"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-7" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">&quot;Percent Males Educational Attaintment&quot;</span>)</span>
+<span id="cb1-8"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-8" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">ggtitle</span>(<span class="st">&quot;Scatterplot of Males vs Females Educational Attainment&quot;</span>, </span>
+<span id="cb1-9"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-9" tabindex="-1"></a>                      <span class="at">subtitle =</span> <span class="st">&quot;Constructed by You&quot;</span>)</span>
+<span id="cb1-10"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-10" tabindex="-1"></a>Plot <span class="ot">=</span> Plot <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">plot.title=</span><span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>), </span>
+<span id="cb1-11"><a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#cb1-11" tabindex="-1"></a>                    <span class="at">plot.subtitle =</span> <span class="fu">element_text</span>(<span class="at">hjust=</span><span class="fl">0.5</span>))  </span></code></pre></div></li>
 </ol>
 <hr />
 </div>
-<div id="submission-instructions" class="section level2 hasAnchor">
-<h2>Submission Instructions<a href="activity-1---exploring-categorical-data.html#submission-instructions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li>Save your bar plot as a <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> file.</li>
-<li>Provide your file to your instructor for feedback or assessment.</li>
-</ul>
+<div id="based-on-your-data-analysis-using-your-r-outputs-answer-the-following-related-questions" class="section level2 hasAnchor">
+<h2>Based on your data analysis (using your R outputs), answer the following related questions:<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#based-on-your-data-analysis-using-your-r-outputs-answer-the-following-related-questions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Refer to the scatterplot of the data. Describe the nature of the relationship between the percentage of males’ and females’ educational attainment in OECD countries.</li>
+<li>What is the estimated correlation coefficient? Interpret this number in this context.</li>
+<li>What does the regression line tell us?</li>
+<li>Give the least-squares prediction equation (the equation of the regression line).</li>
+<li>Interpret the estimated slope in the regression equation in this context.</li>
+<li>Interpret the estimated <span class="math inline">\(y\)</span>-intercept in the regression equation in this context.</li>
+<li>What is the predicted value for the percentage of males’ educational attainment when females’ educational attainment is 80%?</li>
+<li>For the United Kingdom, the percentage of educational attainment for males is 81%, and for females is 80%. What is the residual for this observation?</li>
+<li>What is the residual standard error of the regression model?</li>
+<li>What is the estimated standard deviation of males’ educational attainment <span class="math inline">\(y\)</span> for any fixed value of females’ educational attainment <span class="math inline">\(x\)</span>?</li>
+<li>Confirm that this data has no regression outlier.</li>
+<li>State and check the necessary assumptions about the random errors in the regression model.</li>
+<li>What percentage of variation in males’ educational attainment is accounted for by the regression model?</li>
+<li>Test whether there is a significant relationship between males’ and females’ percentages of educational attainment. In your answer, be sure to state the null and alternative hypotheses, the value for the observed test statistic, the reference distribution, the <span class="math inline">\(p\)</span>-value, and, if possible, the directional conclusion using plain English.</li>
+</ol>
+<hr />
+</div>
+<div id="required-r-output-for-submission-6" class="section level2 hasAnchor">
+<h2>Required R Output for Submission<a href="activity-10---correlation-and-introduction-to-simple-linear-regression-model.html#required-r-output-for-submission-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using this assignment page, upload your scatterplot of the data with a histogram of each variable in the data added to its margins. The accepted file formats for Quercus submission are: <code>.doc</code>, <code>.pdf</code>, <code>.jpeg</code>, or <code>.png</code> files.</p>
 
 </div>
 </div>
@@ -375,8 +360,8 @@ No (Otherwise)
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="activity-2---exploring-quantitative-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="activity-9---analysis-of-categorical-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-to-set-up-r-for-data-analysis-activities.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

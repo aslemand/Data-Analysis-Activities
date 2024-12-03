@@ -14,5 +14,6 @@ rmd_files:
   - 07-activity_07.Rmd
   - 08-activity_08.Rmd
   - 09-activity_09.Rmd
+  - 10-activity_10.Rmd
   - r_instructions.Rmd
 number_sections: true    # Enable numbering globally
