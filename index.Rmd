@@ -1,7 +1,6 @@
 ---
 title: "Data Analysis Activities"
-author: "Asal Aslemand, Jaiditya Dev, and Sinan Ma"
-date: "`r Sys.Date()`"
+author: "Asal Aslemand and Jaiditya Dev"
 output: 
   bookdown::gitbook:
     number_sections: false
@@ -27,7 +26,7 @@ Click on a link below to access a specific statistical activity.
 - [Activity 4 - Applications of Limit Theorem](#activity-4---applications-of-limit-theorem)
 - [Activity 5 - Estimation with Confidence Intervals](#activity-5---estimation-with-confidence-intervals)
 - [Activity 6 - Introduction to Hypothesis Testing and Concepts](#activity-6---introduction-to-hypothesis-testing-and-concepts)
-- [Activity 7 - Errors in Tests, Statistical Power & Sample Size](#activity-7---errors-in-tests-statistical-power--sample-size)
+- [Activity 7 - Errors in Tests, Statistical Power and Sample Size](#activity-7---errors-in-tests-statistical-power-and-sample-size)
 - [Activity 8 - Comparing Groups](#activity-8---comparing-groups)
 - [Activity 9 - Analysis of Categorical Data](#activity-9---analysis-of-categorical-data)
 - [Activity 10 - Correlation and Introduction to Simple Linear Regression Model](#activity-10---correlation-and-introduction-to-simple-linear-regression-model)
@@ -35,3 +34,6 @@ Click on a link below to access a specific statistical activity.
 ---
 
 **Note:** Solution to each statistical activity is shared at the instructor's discretion.
+
+If you would like to learn how to set up R on your local computer to work on these activities, please visit the [How to Set Up R for Data Analysis Activities page](#how-to-set-up-r-for-data-analysis-activities).
+

@@ -1,7 +1,7 @@
 ---
 output: bookdown::gitbook
 ---
-# Activity 4 - Applications of Limit Theorems
+# Activity 4 - Applications of Limit Theorem
 
 ## Activity Objective
 

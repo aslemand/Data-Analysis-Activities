@@ -1,7 +1,7 @@
 ---
 output: bookdown::gitbook
 ---
-# Activity 7 - Errors in Tests, Statistical Power & Sample Size
+# Activity 7 - Errors in Tests, Statistical Power and Sample Size
 
 ## Activity Objective
 
