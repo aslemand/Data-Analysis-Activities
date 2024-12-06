@@ -3,7 +3,7 @@ output: bookdown::gitbook
 ---
 # Activity 3 - Sampling Distributions Related to the Normal Population
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 - Use R/RStudio on a desktop/laptop to simulate data from Normal model. 

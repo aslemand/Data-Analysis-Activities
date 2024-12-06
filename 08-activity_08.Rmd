@@ -3,7 +3,7 @@ output: bookdown::gitbook
 ---
 # Activity 8 - Comparing Groups
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 - Comparing groups
@@ -11,9 +11,7 @@ The objective of this module is to equip you with the following:
 
 ---
 
-## Pre-Task Tutorial Activity
-
-### Context of the Problem
+## Context of Data
 
 Every year, the US releases to the public a large data set containing information on births recorded in the country. This data set has been of interest to medical researchers who are studying the relation between habits and practices of expectant mothers and the birth of their children. We will work with a random sample of 1,000 cases from the data set released in 2014.
 
@@ -21,7 +19,7 @@ We would like to know: is there convincing evidence that newborns from mothers w
 
 ---
 
-### Activity Instructions
+## Activity Instructions
 
 Complete the following steps and work on answering the related question:
 
@@ -67,6 +65,6 @@ Based on your R analysis (using your R outputs), answer the following related qu
 
 ---
 
-## Required R Output for Submission
+## Submission Instructions
 
-Using this assignment page, upload your side-by-side boxplots of the data. The accepted file formats for Quercus submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.
+Using this assignment page, upload your side-by-side boxplots of the data. The accepted file formats for submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.

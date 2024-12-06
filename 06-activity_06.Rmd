@@ -3,7 +3,7 @@ output: bookdown::gitbook
 ---
 # Activity 6 - Introduction to Hypothesis Testing and Concepts
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 
@@ -24,9 +24,7 @@ The objective of this module is to equip you with the following:
 
 ---
 
-## Pre-Task Tutorial Activity
-
-### Context of the Problem for Carrying Out Simulations
+## Context of Data
 
 Suppose **STA123 course grades** are Normally distributed with a mean of **70** and a standard deviation of **5**.  
 
@@ -40,7 +38,7 @@ Using the STA123 course grades example, we can conduct an experiment using the f
 
 ---
 
-## Steps to Complete the Activity
+## Activity Instructions
 
 1. Download the following file to your computer:
    - [R Script: Hypothesis Testing-Error Probability-Simulation.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_6/Hypothesis-Testing-Error-Probability-Simulation.R)
@@ -52,7 +50,7 @@ Using the STA123 course grades example, we can conduct an experiment using the f
    - Open the R script `Hypothesis Testing-Error Probability-Simulation.R` and start running the provided code.
 
 4. There are two required R code modifications:
-   - **Line 10**: You need to input a seed number. You are provided with a unique seed number that you can retrieve from Quercus in your Grade page (see [Seed Number](#)). Find your seed number and put it into line 10 and run the line of code in R.
+   - **Line 10**: You need to input a seed number. Select your seed number and put it into line 10 and run the line of code in R.
    ```{r, eval=FALSE}
    # R code modification #1: 
    # Enter your seed number inside the function set.seed( ) 
@@ -89,6 +87,6 @@ Based on your R analysis (using your R outputs), answer the following related qu
 
 ---
 
-## Required R Output for Submission
+## Submission Instructions
 
-Using this assignment page, upload your histogram of t-statistics based on your simulated data. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.
+Using this assignment page, upload your histogram of t-statistics based on your simulated data. The accepted file formats for submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.

@@ -4,7 +4,7 @@ output: bookdown::gitbook
 
 # Activity 10 - Correlation and Introduction to Simple Linear Regression Model
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 - Describe the nature of the relationship between two quantitative variables using a scatterplot of the data.
@@ -19,7 +19,7 @@ The objective of this module is to equip you with the following:
 
 ---
 
-## Pre-Task Tutorial Activity
+## Context of Data
 
 The Organisation of Economic Cooperation and Development ([OECD](http://www.oecd.org/about/)) gathers various information regarding OECD countries and its partners to promote policies that improve the economic and social well-being of people around the world. The “Better Life Index” (BLI, 2017), a program conducted by OECD, includes information about Educational Attainment. This variable refers to the percentage of adults aged 25 to 64 holding at least an upper secondary degree over the same age as defined by ISCED Classification (International Standard Classification of Education).
 
@@ -27,7 +27,7 @@ You will analyze the relationship between males’ and females’ percentage of 
 
 ---
 
-## Complete the following steps and work on answering the related questions:
+## Activity Instructions
 
 1. **Download the required files**:
    - [Data file: EduAttain-OECD2017.csv](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/refs/heads/main/data/Activity_10/EduAttain-OECD2017.csv)
@@ -61,7 +61,7 @@ You will analyze the relationship between males’ and females’ percentage of 
 
 ---
 
-## Based on your data analysis (using your R outputs), answer the following related questions:
+## Related Questions
 
 1. Refer to the scatterplot of the data. Describe the nature of the relationship between the percentage of males' and females' educational attainment in OECD countries.
 2. What is the estimated correlation coefficient? Interpret this number in this context.
@@ -80,6 +80,6 @@ You will analyze the relationship between males’ and females’ percentage of 
 
 ---
 
-## Required R Output for Submission
+## Submission Instructions
 
-Using this assignment page, upload your scatterplot of the data with a histogram of each variable in the data added to its margins. The accepted file formats for Quercus submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.
+Using this assignment page, upload your scatterplot of the data with a histogram of each variable in the data added to its margins. The accepted file formats for submission are: `.doc`, `.pdf`, `.jpeg`, or `.png` files.

@@ -3,7 +3,7 @@ output: bookdown::gitbook
 ---
 # Activity 9 - Analysis of Categorical Data
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 
@@ -14,13 +14,13 @@ The objective of this module is to equip you with the following:
 
 ---
 
-## Pre-Task Tutorial Activity
+## Context of Data
 
 The Canadian Community Health Survey (CCHS, 2018) is a cross-sectional survey that collects information related to health status for the Canadian population. The CCHS data is collected from persons aged 12 and over living in the ten provinces and three territories. Excluded from the sampling frame are individuals living on Reserves, institutional residents (health institutions, prisons, etc.), full-time members of the Canadian Forces, and youth aged 12 to 17 living in foster homes. In this activity, you will investigate the relationship between perception of mental health among youth and their gender.
 
 ---
 
-### Instructions
+## Activity Instructions
 
 Follow these steps to complete the activity and answer the related questions:
 
@@ -89,6 +89,6 @@ Based on your data analysis (using your R outputs), answer the following related
 
 ---
 
-## Required R Output for Submission
+## Submission Instructions
 
-Using this assignment page, upload your conditional distribution of perception of mental health on different ages by gender. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.
+Using this assignment page, upload your conditional distribution of perception of mental health on different ages by gender. The accepted file formats for submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.

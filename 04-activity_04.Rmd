@@ -3,16 +3,18 @@ output: bookdown::gitbook
 ---
 # Activity 4 - Applications of Limit Theorems
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 - Use R/RStudio on a desktop/laptop to construct sampling distribution of the sample mean. 
 - Explore the concept of central limit theorem
 - Apply the Normal Approx. to the Binomial
 
-## Pre-Task Tutorial Activity
+## Context of Data
 
 The General Social Survey (GSS, 2013) reports the total number of groups, organizations, and associations that individuals, persons 12 years of age and older in Canada, participated in during the past 12 months. A researcher took a random sample of 100 persons 12 years of age and older from this population. She asked the randomly selected persons to indicate the total number of groups, organizations, and associations that they participated in during the past 12 months. She stored her data in a CSV file and named the variable of interest “group”.
+
+## Activity Instructions
 
 Complete the following steps and work on answering the related questions:
 

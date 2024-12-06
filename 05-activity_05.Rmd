@@ -3,7 +3,7 @@ output: bookdown::gitbook
 ---
 # Activity 5 - Estimation with Confidence Intervals
 
-## Tutorial Objective
+## Activity Objective
 
 The objective of this module is to equip you with the following:
 - Use R/RStudio on a desktop/laptop to simulate confidence intervals for population parameters of interest.
@@ -14,9 +14,7 @@ The objective of this module is to equip you with the following:
 
 ---
 
-## Pre-Task Tutorial Activity
-
-### Context of the Problem for Carrying Out Simulations
+## Context of Data
 
 Suppose **STA123 course grades** are Normally distributed. Instead of collecting data from students, we will simulate (generate) some data for our example. To simulate data, we need to know the population mean and standard deviation of STA123 course grades. Here we assume the mean STA123 course grades is **70** and the standard deviation is **5**.
 
@@ -33,7 +31,7 @@ Next, we draw a plot of the first 100 simulated confidence intervals and indicat
 
 ---
 
-## Steps to Complete the Activity
+## Activity Instructions
 
 1. Download the following file to your computer:
    - [R Script: Interval-Estimates-Simulations.R](https://raw.githubusercontent.com/aslemand/Data-Analysis-Activities/main/data/Activity_5/Interval-Estimates-Simulations.R)
@@ -62,6 +60,6 @@ Based on your R analysis (using your R outputs), answer the following related qu
 
 ---
 
-## Required R Output for Submission
+## Submission Instructions
 
 Using this assignment page, upload your plot of the **95% confidence intervals** using your simulated data. The accepted file formats for Quercus submission are `.doc`, `.pdf`, `.jpeg`, or `.png` files.
