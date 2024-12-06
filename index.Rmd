@@ -1,6 +1,8 @@
 ---
 title: "Data Analysis Activities"
-author: "Asal Aslemand and Jaiditya Dev"
+author: |
+  Asal Aslemand and Jaiditya Dev  
+  University of Toronto Mississauga - Department of Mathematical and Computational Sciences
 output: 
   bookdown::gitbook:
     number_sections: false
